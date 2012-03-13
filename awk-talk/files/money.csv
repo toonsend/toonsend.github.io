@@ -1,9 +1,9 @@
-gold,     1   , 1976,  1986,  USA            ,     American Eagle
-gold,     1   , 1905,  1908,  Austria-Hungary,     Franz Josef 100 Korona
-gold,     1   , 1964,  1984,  Switzerland    ,     ingot
-gold,     1   , 1979,  1979,  RSA            ,     Krugerrand
-gold,     0.5 , 1971,  1981,  RSA            ,     Krugerrand
-gold,     0.1 , 1926,  1986,  PRC            ,     Panda
-gold,     0.25, 1986,  1986,  USA            ,     Liberty 5-dollar piece
-gold,     0.25, 1984,  1987,  USA            ,     Constitution 5-dollar piece
-gold,     1   , 1980,  1988,  Canada         ,     Maple Leaf
+gold,1,1976,1986,USA,American Eagle
+gold,1,1905,1908,Austria-Hungary,Franz Josef Korona
+gold,1,1964,1984,Switzerland,ingot
+gold,1,1979,1979,RSA,Krugerrand
+gold,0.5,1971,1981,RSA,Krugerrand
+gold,0.1,1926,1986,PRC,Panda
+gold,0.25,1986,1986,USA,Liberty 5-dollar piece
+gold,0.25,1984,1987,USA,Constitution 5-dollar piece
+gold,1,1980,1988,Canada,Maple Leaf

@@ -81,6 +81,8 @@ and
 <li>The file is processed one line at a time, the awk command has an implicit FOR loop</li>
 <pre>awk '{print}' money.txt - Prints every line</pre>
 <pre>awk '{print $3}' money.txt - Prints the third column</pre>
+<br/>
+<h2>TRY IT</h2>
 <li>Try printing the country</li>
 <li>Try printing the country and the coin</li>
 </ul>
@@ -92,9 +94,9 @@ and
 <li>A comma seperating the fields includes a space</li>
 <pre>awk '{print $3,$4} money.txt</pre>
 <li>What does this do?</li>
-<br />
-<br />
 <pre>awk '{print $3,"$4"} money.txt</pre>
+<br/>
+<h2>TRY IT</h2>
 <li>Print out country,coin</li>
 </ul>
 </div>
@@ -116,6 +118,8 @@ and
 <h1>Regex</h1>
 <ul>
 <pre>awk '/USA/ {print}' money.txt</pre>
+<br/>
+<h2>TRY IT</h2>
 <li>Print the year from all coins from RSA</li>
 </ul>
 </div>
@@ -125,6 +129,8 @@ and
 <h1>Relational Expressions</h1>
 <ul>
 <pre>awk '$4 == "USA" {print}' money.txt</pre>
+<br/>
+<h2>TRY IT</h2>
 <li>Print all the coins where the value is less than 0.5</li>
 <li>Print all the coins where the first year of manufacturer is equal to the coin's year</li>
 </ul>
@@ -134,6 +140,9 @@ and
 <h1>Pattern Matchin</h1>
 <ul>
 <pre>awk '$4 ~ /USA/ {print}' money.txt</pre>
+
+<br/>
+<h2>TRY IT</h2>
 <li>Print all the coins where the country is not the usa</li>
 </ul>
 </div>
@@ -142,6 +151,8 @@ and
 <h1>Begin AND End</h1>
 <ul>
 <pre>awk 'BEGIN{total=0} {total++} END{print total}' money.txt'</pre>
+<br/>
+<h2>TRY IT</h2>
 <li>Print the total value of all the coins</li>
 <li>Print the oldest coin</li>
 </ul>
@@ -158,11 +169,14 @@ and
 <div class="slide">
 <h1>Back to the beginning</h1>
 <ul>
-<pre>cat messages | awk '$13=="504" { split($3,hr,":"); print $1,$2,hr[1]}'</pre>
+<pre>cat messages.txt | awk '$11=="504" { split($3,hr,":"); print $1,$2,hr[1]}'</pre>
 <pre> | uniq -c</pre>
 <li>What does it do?</li>
-<li>Example line can be found in files/examples.txt</li>
-<li>More examples in files/examples.txt</li>
+<li>Example line can be found in </li>
+<a href='files/messages.txt'>messages.txt</a>
+<br/>
+<li>More examples in</li>
+<a href='files/examples.txt'>examples.txt</a>
 </ul>
 </div>
 
