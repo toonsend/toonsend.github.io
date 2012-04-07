@@ -5,345 +5,92 @@
 <description>a place for stuff</description>
 <language>en</language>
 <copyright>Copyright 2012 Toons</copyright>
-<pubDate>Tue, 20 Mar 2012 02:09:41 GMT</pubDate>
-<lastBuildDate>Tue, 20 Mar 2012 02:09:41 GMT</lastBuildDate>
+<pubDate>Sat, 07 Apr 2012 05:14:36 GMT</pubDate>
+<lastBuildDate>Sat, 07 Apr 2012 05:14:36 GMT</lastBuildDate>
 <docs>http://blogs.law.harvard.edu/tech/rss</docs>
 <generator>TiddlyWiki 2.6.5</generator>
 <item>
-<title>Append To Bash History File</title>
-<description>Now, say I type a really long command, e.g. a huge long Perl one-liner, in one terminal, and I want to then access and run that command in another terminal via bash history. With bash's default behavior, I can't do it; each terminal has its own history. What I could do is type &lt;br&gt;&lt;code&gt;history -a&lt;/code&gt;&lt;br&gt; in the first terminal, and&lt;br&gt;&lt;code&gt;history -n&lt;/code&gt;&lt;br&gt; in the second terminal; then it'd work wonderfully.</description>
-<link>null#%5B%5BAppend%20To%20Bash%20History%20File%5D%5D</link>
-<pubDate>Tue, 20 Mar 2012 01:51:00 GMT</pubDate>
+<title>Fixing Tmux Cut and Paste</title>
+<description>Tmux is becoming pretty popular as of late, but as with any new technology, there are skeptics. I’m here to quell some rumors and outline how to start using Tmux effectively.&lt;br&gt;&lt;br&gt;Out of all the questions I get, the most common is, “Does copying and pasting work in Tmux? I heard it wasn’t possible.” Forget that noise; copying and pasting works wonderfully with a couple of extra steps.&lt;br&gt;&lt;br&gt;&lt;a target=&quot;_blank&quot; title=&quot;External link to http://robots.thoughtbot.com/post/19398560514/how-to-copy-and-paste-with-tmux-on-mac-os-x&quot; href=&quot;http://robots.thoughtbot.com/post/19398560514/how-to-copy-and-paste-with-tmux-on-mac-os-x&quot; class=&quot;externalLink&quot;&gt;http://robots.thoughtbot.com/post/19398560514/how-to-copy-and-paste-with-tmux-on-mac-os-x&lt;/a&gt;</description>
+<link>null#%5B%5BFixing%20Tmux%20Cut%20and%20Paste%5D%5D</link>
+<pubDate>Sat, 07 Apr 2012 05:14:25 GMT</pubDate>
 
 </item>
 <item>
-<title>AWK Talk 2010</title>
-<description>&lt;img src=&quot;/awk-talk/images/orc.jpg&quot; alt=&quot;Orc to Awk&quot; title=&quot;Orc to Awk&quot; align=&quot;right&quot;&gt;&lt;br&gt;A munch and watch I did in May 2010 on using awk.  I did it as an interactive tutorial.  It works as a static tutorial if you read the comments under the examples as exercises.  &lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;a target=&quot;_blank&quot; title=&quot;External link to /awk-talk/index.html&quot; href=&quot;/awk-talk/index.html&quot; class=&quot;externalLink&quot;&gt;Awk Tutorial - Taming the Orcs&lt;/a&gt;</description>
-<category>Awk</category>
-<category>Terminal</category>
-<link>null#%5B%5BAWK%20Talk%202010%5D%5D</link>
-<pubDate>Thu, 16 Feb 2012 14:22:00 GMT</pubDate>
-
-</item>
-<item>
-<title>DefaultTiddlers</title>
-<description>&lt;a tiddlyfields=&quot;server.type:&amp;quot;file&amp;quot; server.host:&amp;quot;file:///Users/dtownsend/Dropbox/tiddly/index.html&amp;quot;&quot; tiddlylink=&quot;Home&quot; refresh=&quot;link&quot; target=&quot;_blank&quot; title=&quot;External link to null#Home&quot; href=&quot;null#Home&quot; class=&quot;externalLink null&quot;&gt;Home&lt;/a&gt;</description>
-<link>null#DefaultTiddlers</link>
-<pubDate>Thu, 16 Feb 2012 12:14:00 GMT</pubDate>
-
-</item>
-<item>
-<title>SiteTitle</title>
-<description>&lt;span&gt;ToonsWiki&lt;/span&gt;</description>
-<link>null#SiteTitle</link>
-<pubDate>Thu, 16 Feb 2012 11:16:00 GMT</pubDate>
-
-</item>
-<item>
-<title>Strftime Cheatsheet</title>
-<description>Here’s the strftime options from the cheat page as a refresher:&lt;br&gt;&lt;pre&gt;  %a - The abbreviated weekday name (``Sun'')
-  %A - The  full  weekday  name (``Sunday'')
-  %b - The abbreviated month name (``Jan'')
-  %B - The  full  month  name (``January'')
-  %c - The preferred local date and time representation
-  %d - Day of the month (01..31)
-  %e - Day of the month without leading zeroes (1..31)
-  %H - Hour of the day, 24-hour clock (00..23)
-  %I - Hour of the day, 12-hour clock (01..12)
-  %j - Day of the year (001..366)
-  %k - Hour of the day, 24-hour clock w/o leading zeroes ( 0..23)
-  %l - Hour of the day, 12-hour clock w/o leading zeroes ( 1..12)
-  %m - Month of the year (01..12)
-  %M - Minute of the hour (00..59)
-  %p - Meridian indicator (``AM''  or  ``PM'')
-  %P - Meridian indicator (``am''  or  ``pm'')
-  %S - Second of the minute (00..60)
-  %U - Week  number  of the current year,
-          starting with the first Sunday as the first
-          day of the first week (00..53)
-  %W - Week  number  of the current year,
-          starting with the first Monday as the first
-          day of the first week (00..53)
-  %w - Day of the week (Sunday is 0, 0..6)
-  %x - Preferred representation for the date alone, no time
-  %X - Preferred representation for the time alone, no date
-  %y - Year without a century (00..99)
-  %Y - Year with century
-  %Z - Time zone name
-  %z - Time zone expressed as a UTC offset (``-04:00'')
-  %% - Literal ``%'' character
-
-   t = Time.now
-   t.strftime(&quot;Printed on %m/%d/%Y&quot;)   #=&amp;gt; &quot;Printed on 04/09/2003&quot;
-   t.strftime(&quot;at %I:%M%p&quot;)            #=&amp;gt; &quot;at 08:56AM&quot;
-   t.strftime(&quot;%e %B, %Y&quot;)	       #=&amp;gt; &quot;9 April, 2003&quot;
-   t.strftime(&quot;%Y-%m-%dT%H:%M:%S&quot;)     #=&amp;gt; &quot;2003-04-09T08:56:07&quot; (EN 28601)
-
+<title>Creating a new MySql User.</title>
+<description>&lt;pre&gt;mysql&amp;gt; CREATE USER 'monty'@'localhost' IDENTIFIED BY 'some_pass';
+mysql&amp;gt; GRANT ALL PRIVILEGES ON *.* TO 'monty'@'localhost'
+    -&amp;gt;     WITH GRANT OPTION;
+mysql&amp;gt; CREATE USER 'monty'@'%' IDENTIFIED BY 'some_pass';
+mysql&amp;gt; GRANT ALL PRIVILEGES ON *.* TO 'monty'@'%'
+    -&amp;gt;     WITH GRANT OPTION;
+mysql&amp;gt; CREATE USER 'admin'@'localhost';
+mysql&amp;gt; GRANT RELOAD,PROCESS ON *.* TO 'admin'@'localhost';
+mysql&amp;gt; CREATE USER 'dummy'@'localhost';
 &lt;/pre&gt;</description>
-<category>Time</category>
-<category>Ruby</category>
-<link>null#%5B%5BStrftime%20Cheatsheet%5D%5D</link>
-<pubDate>Tue, 24 Jan 2012 12:18:00 GMT</pubDate>
+<link>null#%5B%5BCreating%20a%20new%20MySql%20User.%5D%5D</link>
+<pubDate>Wed, 04 Apr 2012 14:20:00 GMT</pubDate>
 
 </item>
 <item>
-<title>Home</title>
-<description>&lt;div refresh=&quot;macro&quot; macroname=&quot;timeline&quot; params=&quot;&amp;quot;modified&amp;quot; 12&quot;&gt;&lt;ul class=&quot;timeline&quot;&gt;&lt;li class=&quot;listTitle&quot;&gt;20 March 2012&lt;/li&gt;&lt;li class=&quot;listLink&quot;&gt;&lt;a tiddlylink=&quot;Append To Bash History File&quot; refresh=&quot;link&quot; class=&quot;tiddlyLink tiddlyLinkExisting&quot; title=&quot;Append To Bash History File - YourName, Tue Mar 20 01:51:00 2012&quot; href=&quot;javascript:;&quot;&gt;Append To Bash History File&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;ul class=&quot;timeline&quot;&gt;&lt;li class=&quot;listTitle&quot;&gt;16 February 2012&lt;/li&gt;&lt;li class=&quot;listLink&quot;&gt;&lt;a tiddlylink=&quot;AWK Talk 2010&quot; refresh=&quot;link&quot; class=&quot;tiddlyLink tiddlyLinkExisting&quot; title=&quot;AWK Talk 2010 - Toons, Thu Feb 16 14:22:00 2012&quot; href=&quot;javascript:;&quot;&gt;AWK Talk 2010&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;listLink&quot;&gt;&lt;a tiddlylink=&quot;DefaultTiddlers&quot; refresh=&quot;link&quot; class=&quot;tiddlyLink tiddlyLinkExisting&quot; title=&quot;The tiddlers listed in this shadow tiddler will be automatically displayed when ~TiddlyWiki starts up&quot; href=&quot;javascript:;&quot;&gt;DefaultTiddlers&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;listLink&quot;&gt;&lt;a tiddlylink=&quot;SiteTitle&quot; refresh=&quot;link&quot; class=&quot;tiddlyLink tiddlyLinkExisting&quot; title=&quot;This shadow tiddler is used as the first part of the page title&quot; href=&quot;javascript:;&quot;&gt;SiteTitle&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;ul class=&quot;timeline&quot;&gt;&lt;li class=&quot;listTitle&quot;&gt;24 January 2012&lt;/li&gt;&lt;li class=&quot;listLink&quot;&gt;&lt;a tiddlylink=&quot;Strftime Cheatsheet&quot; refresh=&quot;link&quot; class=&quot;tiddlyLink tiddlyLinkExisting&quot; title=&quot;Strftime Cheatsheet - Toons, Tue Jan 24 12:18:00 2012&quot; href=&quot;javascript:;&quot;&gt;Strftime Cheatsheet&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;listLink&quot;&gt;&lt;a tiddlylink=&quot;Home&quot; refresh=&quot;link&quot; class=&quot;tiddlyLink tiddlyLinkExisting&quot; title=&quot;Home - Toons, Tue Jan 24 12:17:00 2012&quot; href=&quot;javascript:;&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;listLink&quot;&gt;&lt;a tiddlylink=&quot;Tracking dirty objects in Rails&quot; refresh=&quot;link&quot; class=&quot;tiddlyLink tiddlyLinkExisting&quot; title=&quot;Tracking dirty objects in Rails - Toons, Tue Jan 24 12:17:00 2012&quot; href=&quot;javascript:;&quot;&gt;Tracking dirty objects in Rails&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;listLink&quot;&gt;&lt;a tiddlylink=&quot;Spork and Testing&quot; refresh=&quot;link&quot; class=&quot;tiddlyLink tiddlyLinkExisting&quot; title=&quot;Spork and Testing - Toons, Tue Jan 24 12:16:00 2012&quot; href=&quot;javascript:;&quot;&gt;Spork and Testing&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;ul class=&quot;timeline&quot;&gt;&lt;li class=&quot;listTitle&quot;&gt;3 January 2012&lt;/li&gt;&lt;li class=&quot;listLink&quot;&gt;&lt;a tiddlylink=&quot;Changing default shell&quot; refresh=&quot;link&quot; class=&quot;tiddlyLink tiddlyLinkExisting&quot; title=&quot;Changing default shell - Toons, Tue Jan  3 09:28:00 2012&quot; href=&quot;javascript:;&quot;&gt;Changing default shell&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;ul class=&quot;timeline&quot;&gt;&lt;li class=&quot;listTitle&quot;&gt;1 December 2011&lt;/li&gt;&lt;li class=&quot;listLink&quot;&gt;&lt;a tiddlylink=&quot;Ruby One Liners&quot; refresh=&quot;link&quot; class=&quot;tiddlyLink tiddlyLinkExisting&quot; title=&quot;Ruby One Liners - Toons, Thu Dec  1 14:35:00 2011&quot; href=&quot;javascript:;&quot;&gt;Ruby One Liners&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;ul class=&quot;timeline&quot;&gt;&lt;li class=&quot;listTitle&quot;&gt;23 November 2011&lt;/li&gt;&lt;li class=&quot;listLink&quot;&gt;&lt;a tiddlylink=&quot;AdvancedOptions&quot; refresh=&quot;link&quot; class=&quot;tiddlyLink tiddlyLinkExisting&quot; title=&quot;This shadow tiddler provides access to several advanced options&quot; href=&quot;javascript:;&quot;&gt;AdvancedOptions&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;ul class=&quot;timeline&quot;&gt;&lt;li class=&quot;listTitle&quot;&gt;22 November 2011&lt;/li&gt;&lt;li class=&quot;listLink&quot;&gt;&lt;a tiddlylink=&quot;Creating a Fake Server&quot; refresh=&quot;link&quot; class=&quot;tiddlyLink tiddlyLinkExisting&quot; title=&quot;Creating a Fake Server - YourName, Tue Nov 22 21:27:00 2011&quot; href=&quot;javascript:;&quot;&gt;Creating a Fake Server&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;</description>
-<link>null#Home</link>
-<pubDate>Tue, 24 Jan 2012 12:17:00 GMT</pubDate>
+<title>Forgetting to run screen</title>
+<description>So I'm in a friend's house and I've been doing some compwinner work when I realised there is no way this alter table is going to finish before I go home and I forgot to run screen. A conversation with Toons came in to my head and I suddenly remembered something. &lt;br&gt;If you do make this mistake you can get around it as follows&lt;br&gt;&lt;pre&gt;CTRL-z   suspends your current process
+bg backgrounds it
+disown %1 detaches it from your pts
+&lt;/pre&gt;&lt;br&gt;hey presto you now can go shut the terminal, go away and it'll keep running in the background. :)&lt;br&gt;Obviously unlike in screen, you can't get it back, but at least you haven't wasted 4 hours&lt;br&gt;&lt;br&gt;DMC</description>
+<category>bash</category>
+<link>null#%5B%5BForgetting%20to%20run%20screen%5D%5D</link>
+<pubDate>Thu, 22 Mar 2012 09:14:00 GMT</pubDate>
 
 </item>
 <item>
-<title>Tracking dirty objects in Rails</title>
-<description>This is from &lt;a target=&quot;_blank&quot; title=&quot;External link to http://ryandaigle.com/articles/2008/3/31/what-s-new-in-edge-rails-dirty-objects&quot; href=&quot;http://ryandaigle.com/articles/2008/3/31/what-s-new-in-edge-rails-dirty-objects&quot; class=&quot;externalLink&quot;&gt;Ryan's Scraps&lt;/a&gt;.&lt;br&gt;&lt;br&gt;The ability to track whether or not your active record objects have been modified or not becomes a lot easier with the new dirty object functionality of edge rails. It’s dead simple, and pretty slick, to use:&lt;br&gt;&lt;pre&gt;article = Article.find(:first)
-article.changed?  #=&amp;gt; false
-
-# Track changes to individual attributes with
-# attr_name_changed? accessor
-article.title  #=&amp;gt; &quot;Title&quot;
-article.title = &quot;New Title&quot;
-article.title_changed? #=&amp;gt; true
-
-# Access previous value with attr_name_was accessor
-article.title_was  #=&amp;gt; &quot;Title&quot;
-
-# See both previous and current value with attr_name_change accessor
-article.title_change  #=&amp;gt; [&quot;Title&quot;, &quot;New Title&quot;]
-&lt;/pre&gt;&lt;br&gt;Beyond the clever attribute based accessor methods, you can also query to object directly for its list of all changed attributes. (Continuing from the previous example):&lt;br&gt;&lt;pre&gt;# Get a list of changed attributes
-article.changed  #=&amp;gt; ['title']
-
-# Get the hash of changed attributes and their previous and current values
-article.changes  #=&amp;gt; { 'title' =&amp;gt; [&quot;Title&quot;, &quot;New Title&quot;] }
-&lt;/pre&gt;Note: Once you save a dirty object it clears out its changed state tracking and is once again considered unchanged.&lt;br&gt;&lt;pre&gt;article.changed?  #=&amp;gt; true
-article.save  #=&amp;gt; true
-article.changed?  #=&amp;gt; false
-&lt;/pre&gt;If you’re going to be modifying an attribute outside of the attr= writer, you can use attr_name_will_change! to tell the object to be aware of the change:&lt;br&gt;&lt;pre&gt;article = Article.find(:first)
-article.title_will_change!
-article.title.upcase!
-article.title_change  #=&amp;gt; ['Title', 'TITLE']
-&lt;/pre&gt;And coming down the pipe is a feature that will make the most of this functionality – partial SQL updates that will only update attributes that have changed…</description>
-<category>Rails</category>
-<link>null#%5B%5BTracking%20dirty%20objects%20in%20Rails%5D%5D</link>
-<pubDate>Tue, 24 Jan 2012 12:17:00 GMT</pubDate>
-
-</item>
-<item>
-<title>Spork and Testing</title>
-<description>&lt;a target=&quot;_blank&quot; title=&quot;External link to http://mikbe.tk/2011/02/10/blazingly-fast-tests/&quot; href=&quot;http://mikbe.tk/2011/02/10/blazingly-fast-tests/&quot; class=&quot;externalLink&quot;&gt;Using Spork&lt;/a&gt;</description>
-<category>Rails</category>
-<link>null#%5B%5BSpork%20and%20Testing%5D%5D</link>
-<pubDate>Tue, 24 Jan 2012 12:16:00 GMT</pubDate>
-
-</item>
-<item>
-<title>Changing default shell</title>
-<description>&lt;pre&gt;$ chsh -s $(which zsh)
+<title>How to fix the backspace key in screen</title>
+<description>&lt;pre&gt;alias screen='TERM=screen screen'
 &lt;/pre&gt;</description>
-<link>null#%5B%5BChanging%20default%20shell%5D%5D</link>
-<pubDate>Tue, 03 Jan 2012 09:28:00 GMT</pubDate>
+<link>null#%5B%5BHow%20to%20fix%20the%20backspace%20key%20in%20screen%5D%5D</link>
+<pubDate>Tue, 20 Mar 2012 10:31:00 GMT</pubDate>
 
 </item>
 <item>
-<title>Ruby One Liners</title>
-<description>&lt;strong&gt;File spacing&lt;/strong&gt;&lt;br&gt;&lt;br&gt;Double-space a file.&lt;br&gt;&lt;br&gt;&lt;pre&gt;ruby -ne 'print; puts'
-ruby -ne 'BEGIN{$\=&quot;\n&quot;}; print'
-ruby -pe 'BEGIN{$\=&quot;\n&quot;};'
-&lt;/pre&gt;&lt;br&gt;Double-space only non-blank lines.&lt;br&gt;&lt;br&gt;&lt;pre&gt;ruby -ne 'print; puts unless $_.chomp.empty?'
-ruby -ne 'print; puts unless ~/^$/'
-ruby -ne 'print $_ + ((~/^$) ? &quot;&quot; : &quot;\n&quot;)'
-&lt;/pre&gt;&lt;br&gt;Triple-space a file.&lt;br&gt;&lt;br&gt;&lt;pre&gt;ruby -ne 'print; 2.times{puts}'
-ruby -pe 'BEGIN{$\=&quot;\n\n&quot;};'
-&lt;/pre&gt;&lt;br&gt;&lt;strong&gt;Numbering and calculations.&lt;/strong&gt;&lt;br&gt;&lt;br&gt;Precede each line by its file-specific line number (left-aligned). Using a tab instead of space will preserve margins.&lt;br&gt;&lt;br&gt;&lt;pre&gt;ruby -pe 'print $&amp;amp;lt;.file.lineno, &quot;\t&quot;'
-
-&lt;/pre&gt;&lt;br&gt;Precede each line by its overall line number, with tab.&lt;br&gt;&lt;br&gt;&lt;pre&gt;ruby -pe 'print $., &quot;\t&quot;'
-&lt;/pre&gt;&lt;br&gt;Number each line of a file (at left, right-aligned).&lt;br&gt;&lt;br&gt;&lt;pre&gt;ruby -ne 'printf &quot;%5d: %s&quot;, $., $_'
-&lt;/pre&gt;&lt;br&gt;Number non-blank lines.&lt;br&gt;&lt;br&gt;&lt;pre&gt;ruby -ne 'BEGIN{$n=0}; if ~/^$/; print; else \
-    $n += 1; printf &quot;%5d: %s&quot;, $n, $_; end'
-&lt;/pre&gt;&lt;br&gt;Count lines (emulates &lt;code&gt;wc -l&lt;/code&gt;).&lt;br&gt;&lt;br&gt;&lt;pre&gt;ruby -ne 'END{printf &quot;%8d %s\n&quot;, $., $FILENAME}'
-&lt;/pre&gt;&lt;br&gt;Print the sums of the fields of every line (expects fields to be integers).&lt;br&gt;&lt;br&gt;&lt;pre&gt;ruby -ane 'puts $F.reduce(0){|sum,x| sum+x.to_i}'
-&lt;/pre&gt;&lt;br&gt;Print the sum of all integers present on all lines.&lt;br&gt;&lt;br&gt;&lt;pre&gt;ruby -ane 'BEGIN{$sum=0}; $sum+=$F.reduce(0){|s,x| s+x.to_i}; \
-    END{puts $sum}'
-ruby -ane 'BEGIN{$a=[]}; $a+=$F.map{|x| x.to_i}; \
-    END{puts $a.reduce(0){|s,x| s+x}}'
-ruby -e 'puts readlines.map{|r| r.split.map{|x| x.to_i}}.flatten\
-    .reduce(0){|s,x| s+x}'
-&lt;/pre&gt;&lt;br&gt;Replace each integer field with its absolute value. All spacing is reduced to a single space.&lt;br&gt;&lt;br&gt;&lt;pre&gt;ruby -ane '$F.map!{|x| x.to_i.abs}; puts $F.join(&quot; &quot;)'
-&lt;/pre&gt;&lt;br&gt;Print the total number of words (fields) over all text. Word separators are any sequence of whitespace.&lt;br&gt;&lt;br&gt;&lt;pre&gt;ruby -ane 'BEGIN{$t=0}; $t+=$F.size; END{puts $t}'
-&lt;/pre&gt;&lt;br&gt;Print the total number of lines that contain “Beth”.&lt;br&gt;&lt;br&gt;&lt;pre&gt;ruby -ne 'BEGIN{$t=0}; $t+=1 if ~/Beth/; END{puts $t}'
-&lt;/pre&gt;&lt;br&gt;Print the largest first field and the line that contains it.&lt;br&gt;&lt;br&gt;&lt;pre&gt;ruby -ane 'BEGIN{$,=&quot;\t&quot;; $max=0; $maxline=&quot;&quot;}; \
-    $n = $F[0].to_i; if $n &amp;amp;gt; $max; $max = $n; $maxline = $_; end; \
-    END{print $max, $maxline}'
-ruby -e '$,=&quot;\t&quot;; print readlines.map{|r| s=r.split; [s[0].to_i,r]}\
-    .max{|a,b| a[0]&amp;amp;lt;=&amp;amp;gt;b[0]}'
-&lt;/pre&gt;&lt;br&gt;Print the number of fields on each line, followed by the line.&lt;br&gt;&lt;br&gt;&lt;pre&gt;ruby -ane 'BEGIN{$,=&quot;\t&quot;}; print $F.size, $_'
-ruby -ane 'printf &quot;%3d %s&quot;, $F.size, $_'
-&lt;/pre&gt;&lt;br&gt;Print the last field of each line.&lt;br&gt;&lt;br&gt;&lt;pre&gt;ruby -ane 'puts $F.last'
-&lt;/pre&gt;&lt;br&gt;Print the last field of the last line.&lt;br&gt;&lt;br&gt;&lt;pre&gt;ruby -ane '$f = $F.last; END{puts $f}'
-&lt;/pre&gt;&lt;br&gt;Print every line with more than 4 fields.&lt;br&gt;&lt;br&gt;&lt;pre&gt;ruby -ane 'print if $F.size &amp;amp;gt; 4'
-&lt;/pre&gt;&lt;br&gt;Print every line for which the value of the last field is &lt;span&gt;&amp;gt;&lt;/span&gt; 4.&lt;br&gt;&lt;br&gt;&lt;pre&gt;ruby -ane 'print if $F.last.to_i &amp;amp;gt; 4'
-
-&lt;/pre&gt;&lt;br&gt;&lt;strong&gt;String creation&lt;/strong&gt;&lt;br&gt;&lt;br&gt;Create a string of a specific length (e.g. generate 513 spaces).&lt;br&gt;&lt;br&gt;&lt;pre&gt;ruby -e 'puts &quot; &quot;*513'
-&lt;/pre&gt;&lt;br&gt;Insert a string of specific length at a certain character position. For example, insert 49 spaces after column 6 of each input line.&lt;br&gt;&lt;br&gt;&lt;pre&gt;ruby -pe 'sub! /^.{6}/, &quot;\\&amp;amp;amp;&quot; + &quot; &quot;*49'
-&lt;/pre&gt;&lt;br&gt;&lt;strong&gt;Array creation&lt;/strong&gt;&lt;br&gt;&lt;br&gt;The following are useful bits of Ruby code to easily make up arrays and hashes (associative arrays that may be indexed by any soft of object, yet often indexed by strings).&lt;br&gt;&lt;br&gt;Create an array of token strings named $month.&lt;br&gt;&lt;br&gt;&lt;code&gt;$month = %w{Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec}
-&lt;/code&gt;&lt;br&gt;&lt;br&gt;Create the reverse hashtable of the $month array, which given the month index for the given month name.&lt;br&gt;&lt;br&gt;&lt;code&gt;$mdigit = {}; $month.each_with_index{|m,i| $mdigit[m] = i}
-
-&lt;/code&gt;&lt;br&gt;&lt;br&gt;More generally, create a hash $h that indexes the contents of array $v with keys from array $k of the same size.&lt;br&gt;&lt;br&gt;&lt;code&gt;$h = {}; $k.zip($v).each{|k,v| $h[k] = v}
-&lt;/code&gt;&lt;br&gt;&lt;br&gt;&lt;strong&gt;Text conversion and substitution&lt;/strong&gt;&lt;br&gt;&lt;br&gt;In a UNIX environment, convert DOS/Windows newlines (CR+LF) to Unix (LF).&lt;br&gt;&lt;br&gt;&lt;pre&gt;ruby -pe 'sub! /\r\n$/, &quot;\n&quot;'
-&lt;/pre&gt;&lt;br&gt;In a UNIX environment, convert Unix newlines (LF) to DOS/Windows (CR+LF).&lt;br&gt;&lt;br&gt;&lt;pre&gt;ruby -pe 'BEGIN{$; = &quot;\r\n&quot;}; chomp!'
-&lt;/pre&gt;&lt;br&gt;In a Windows environment (forget DOS, I don’t care whether Ruby runs there), convert DOS/Windows newlines (CR+LF) to Unix (LF).&lt;br&gt;&lt;br&gt;&lt;pre&gt;ruby -pe 'BEGIN{$; = &quot;\n&quot;}; chomp!'
-&lt;/pre&gt;&lt;br&gt;In a Windows environment, convert Unix newlines (LF) to DOS/Windows (CR+LF).&lt;br&gt;&lt;br&gt;&lt;pre&gt;ruby -pe 'sub! /\n$/, &quot;\r\n&quot;'
-&lt;/pre&gt;&lt;br&gt;Delete leading whitespace from the front of each line, thereby aligning all text flush left.&lt;br&gt;&lt;br&gt;&lt;pre&gt;ruby -pe 'sub! /^\s*/, &quot;&quot;'
-&lt;/pre&gt;&lt;br&gt;Delete trailing whitespace from the end of each line.&lt;br&gt;&lt;br&gt;&lt;pre&gt;ruby -pe 'sub! /\s*$/, &quot;&quot;'
-&lt;/pre&gt;&lt;br&gt;Delete both leading and trailing whitespace from each line.&lt;br&gt;&lt;br&gt;&lt;pre&gt;ruby -pe 'gsub! /^\s*|\s*$/, &quot;&quot;'
-
-&lt;/pre&gt;&lt;br&gt;Insert 5 blank spaces at the beginning of each line.&lt;br&gt;&lt;br&gt;&lt;pre&gt;ruby -pe 'sub! /^/, &quot; &quot;*5'
-&lt;/pre&gt;&lt;br&gt;Align all text flush right on a 79-column width.&lt;br&gt;&lt;br&gt;&lt;pre&gt;ruby -ne 'printf &quot;%79s&quot;, $_'
-&lt;/pre&gt;&lt;br&gt;Center all text on a 79-character width.&lt;br&gt;&lt;br&gt;&lt;pre&gt;ruby -ne 'print &quot; &quot;*((79-$_.chomp.size)/2), $_'
-ruby -ne '$l = $_.chomp.size; if $l &amp;amp;gt; 79; print; \
-    else print &quot; &quot;*((79-$l)/2),$_; end'
-&lt;/pre&gt;&lt;br&gt;The first of these one-liners is a faithful Ruby translation of the equivalent Awk one-liner from Eric Pement’s &lt;code&gt;awk1line.txt&lt;/code&gt;. The second takes into account the edge case by which a line could not be properly centered within 79 characters.&lt;br&gt;&lt;br&gt;Substitute “foo” with “bar” one each line.&lt;br&gt;&lt;br&gt;&lt;pre&gt;ruby -pe 'sub! /foo/, &quot;bar&quot;'   # Only 1st instance.
-ruby -pe 'gsub! /foo/, &quot;bar&quot;'  # All instances.
-&lt;/pre&gt;&lt;br&gt;Substitute “foo” with “bar” only on lines that contain “baz”.&lt;br&gt;&lt;br&gt;&lt;pre&gt;ruby -pe 'gsub! /foo/, &quot;bar&quot; if ~/baz/'
-&lt;/pre&gt;&lt;br&gt;Substitute “foo” with “bar” except on lines that contain “baz”.&lt;br&gt;&lt;br&gt;&lt;pre&gt;ruby -pe 'gsub! /foo/, &quot;bar&quot; unless ~/baz/'
-&lt;/pre&gt;&lt;br&gt;Replace “scarlet” or “ruby” or “puce” with “red”.&lt;br&gt;&lt;br&gt;&lt;pre&gt;ruby -pe 'gsub! /scarlet|ruby|puce/, &quot;red&quot;'
-&lt;/pre&gt;&lt;br&gt;Reverse order of lines (emulates &lt;code&gt;tac&lt;/code&gt;).&lt;br&gt;&lt;br&gt;&lt;pre&gt;ruby -e 'readlines.reverse.each{|r| print r}'
-&lt;/pre&gt;&lt;br&gt;If a line ends with a backslash, append the next line to it, removing the backslash.&lt;br&gt;&lt;br&gt;&lt;pre&gt;ruby -pe 'while ~/\\$/; chomp; chop; $_+=gets.to_s; end'
-ruby -pe 'sub! /\\\s*\n$/, &quot;&quot;'
-&lt;/pre&gt;&lt;br&gt;The first of these two one-liners is a rather faithful translation of Pement’s equivalent one-line. Contrary to the latter, this one does work with sequences of multiple backslash-ending lines. It even works with the edge case of having the last line terminated with a backslash. In this case, &lt;code&gt;gets&lt;/code&gt; returns &lt;code&gt;nil&lt;/code&gt;, which does not match the regular expression, thereby breaking the loop. A problem would however arise as the &lt;code&gt;nil&lt;/code&gt; value cannot be concatenated to the current line: this is why we call method &lt;code&gt;to_s&lt;/code&gt; of whatever &lt;code&gt;gets&lt;/code&gt; returns. If it is a string, &lt;code&gt;to_s&lt;/code&gt; acts as identity; if it is &lt;code&gt;nil&lt;/code&gt;, its string value is the empty string, yielding a non-breaking last output line.&lt;br&gt;&lt;br&gt;The second one-liner is a much simpler solution to the problem that uses explicit line ending modifications to obtain merges between backslash-enders and other lines. This is more awkward to pull off in Awk (haha, its Awkward), since line ending is determined by the contents of variable ORS, the value of which persist between lines. It does still yield a shorter solution than the first equivalent Ruby one-liner, though&lt;br&gt;&lt;br&gt;&lt;code&gt;awk '{ORS=&quot;\n&quot;} /\\$/ {sub(/\\$/,&quot;&quot;); ORS=&quot;&quot;} 1'
-&lt;/code&gt;&lt;br&gt;&lt;br&gt;Print and sort the login names of all users.&lt;br&gt;&lt;br&gt;&lt;pre&gt;ruby -F: -ane 'BEGIN{$s=open(&quot;|sort&quot;,&quot;w&quot;)}; \
-    $s.puts $F[0] unless /^#/; END{$s.close}' /etc/passwd
-ruby -F: -ane '$s.puts $F[0] unless /^#/' /etc/passwd | sort
-ruby -e 'readlines.map{|r| r.split(&quot;:&quot;)[0]}.sort.each{|n| puts n}' /etc/passwd
-&lt;/pre&gt;&lt;br&gt;While longer, the last of these one-liners does not require the standard Unix &lt;code&gt;sort&lt;/code&gt; utility.&lt;br&gt;&lt;br&gt;Print the first 2 fields of every line in opposite order (spacing is normalized).&lt;br&gt;&lt;br&gt;&lt;pre&gt;ruby -ane 'BEGIN{$,=&quot; &quot;;$\=&quot;\n&quot;}; print $F[1],$F[0]'
-ruby -ane 'puts $F[0..1].reverse.join(&quot; &quot;)'
-ruby -ane 'puts $F[0...2].reverse.join(&quot; &quot;)'
-ruby -ane 'printf &quot;%s %s\n&quot;, $F[1], $F[0]'
-&lt;/pre&gt;&lt;br&gt;Switch the first 2 fields of every line (spacing is normalized).&lt;br&gt;&lt;br&gt;&lt;pre&gt;ruby -ane '$F[0],$F[1]=$F[1],$F[0]; puts $F.join(&quot; &quot;)'
-ruby -ane 'if $F.size &amp;amp;lt; 2; print; else \
-    $F[0],$F[1]=$F[1],$F[0]; puts $F.join(&quot; &quot;); end'
-&lt;/pre&gt;&lt;br&gt;The first version is a faithful translation of Pement’s equivalent Awk one-liner, while the second handles the case where lines may not all have at least two fields.&lt;br&gt;&lt;br&gt;Delete the second field off every line (spacing is normalized).&lt;br&gt;&lt;br&gt;&lt;pre&gt;ruby -ane 'BEGIN{$,=&quot; &quot;;$\=&quot;\n&quot;}; $F.delete_at 1; print *$F'
-ruby -ane '$F.delete_at 1; puts $F.join(&quot; &quot;)'
-&lt;/pre&gt;&lt;br&gt;Print in reverse order the fields of each line (spacing is normalized).&lt;br&gt;&lt;br&gt;&lt;pre&gt;ruby -ane 'BEGIN{$,=&quot; &quot;;$\=&quot;\n&quot;}; print *$F.reverse'
-ruby -ane 'puts $F.reverse.join(&quot; &quot;)'
-&lt;/pre&gt;&lt;br&gt;Concatenate every group of 5 lines of input, using a comma separator between concatenated lines.&lt;br&gt;&lt;br&gt;&lt;pre&gt;ruby -pe 'chomp; $\ = ($.%5==0 ? &quot;\n&quot; : &quot;,&quot;)'
-ruby -pe 'chomp; $\ = if $. % 5 == 0; &quot;\n&quot;; else &quot;,&quot;; end'
-
-&lt;/pre&gt;&lt;br&gt;&lt;strong&gt;Selective printing of certain lines&lt;/strong&gt;&lt;br&gt;&lt;br&gt;Print first 10 lines of file (emulates behavior of &lt;code&gt;head&lt;/code&gt;).&lt;br&gt;&lt;br&gt;&lt;pre&gt;ruby -pe 'exit if $. &amp;amp;gt; 10'
-ruby -ne 'print if $. &amp;amp;lt;= 10'
-&lt;/pre&gt;&lt;br&gt;Print first line of file (emulates &lt;code&gt;head -1&lt;/code&gt;).&lt;br&gt;&lt;br&gt;&lt;pre&gt;ruby -pe 'exit if $. &amp;amp;gt; 1'
-&lt;/pre&gt;&lt;br&gt;Print the last two lines of a file (emulates &lt;code&gt;tail -2&lt;/code&gt;).&lt;br&gt;&lt;br&gt;&lt;pre&gt;ruby -ne 'BEGIN{$tail=[&quot;&quot;,&quot;&quot;]}; $tail.shift; $tail&amp;amp;lt;&amp;amp;lt;$_; \
-    END{puts $tail.join(&quot;&quot;)}'
-&lt;/pre&gt;&lt;br&gt;This is very inefficient. The &lt;code&gt;tail&lt;/code&gt; utility does it much better.&lt;br&gt;&lt;br&gt;Print the last line of a file (emulates &lt;code&gt;tail -1&lt;/code&gt;).&lt;br&gt;&lt;br&gt;&lt;pre&gt;ruby -ne 'END{print}'
-&lt;/pre&gt;&lt;br&gt;Print only lines that match some regular expression (emulates &lt;code&gt;grep&lt;/code&gt;).&lt;br&gt;&lt;br&gt;&lt;pre&gt;ruby -ne 'print if ~/regex/'
-&lt;/pre&gt;&lt;br&gt;Print only lines that do NOT match some regular expression (emulates &lt;code&gt;grep -v&lt;/code&gt;).&lt;br&gt;&lt;br&gt;&lt;pre&gt;ruby -ne 'print unless ~/regex/'
-&lt;/pre&gt;&lt;br&gt;Print lines for which field #5 is equal to “abc123”.&lt;br&gt;&lt;br&gt;&lt;pre&gt;ruby -ane 'print if $F[4] == &quot;abc123&quot;'
-&lt;/pre&gt;&lt;br&gt;Print lines for which field #5 is not equal to “abc123”.&lt;br&gt;&lt;br&gt;&lt;pre&gt;ruby -ane 'print if $F[4] != &quot;abc123&quot;'
-&lt;/pre&gt;&lt;br&gt;Same as above, but avoid printing a line if it does not have at least five fields.&lt;br&gt;&lt;br&gt;&lt;pre&gt;ruby -ane 'print if $F.size &amp;amp;gt;= 5 &amp;amp;amp;&amp;amp;amp; $F[4] != &quot;abc123&quot;'
-&lt;/pre&gt;&lt;br&gt;Print lines for which the 7th field matches (respectively doesn’t match) a regular expression.&lt;br&gt;&lt;br&gt;&lt;pre&gt;ruby -ane 'print if $F[6] =~ /^[a-f]/'
-ruby -ane 'print unless $F[6] =~ /^[a-f]/'
-&lt;/pre&gt;&lt;br&gt;Print the line immediately before a regular expression, but not the line that matches it.&lt;br&gt;&lt;br&gt;&lt;pre&gt;ruby -ne 'print $r.to_s if ~/regex/; $r = $_'
-&lt;/pre&gt;&lt;br&gt;Print the line immediately after a regular expression, but not the line that matches it.&lt;br&gt;&lt;br&gt;&lt;pre&gt;ruby -ne 'while ~/regex/; break unless gets; print; end'
-ruby -ne 'while ~/regex/; gets; print $_.to_s; end'
-&lt;/pre&gt;&lt;br&gt;Grep for AAA, BBB and CCC in any order on the same line.&lt;br&gt;&lt;br&gt;&lt;pre&gt;ruby -ne 'print if ~/AAA/ &amp;amp;amp;&amp;amp;amp; ~/BBB/ &amp;amp;amp;&amp;amp;amp; ~/CCC/'
-
-&lt;/pre&gt;&lt;br&gt;Grep for AAA, BBB, and CCC in this order.&lt;br&gt;&lt;br&gt;&lt;pre&gt;ruby -ne 'print if ~/AAA.*BBB.*CCC/'
-&lt;/pre&gt;&lt;br&gt;Print only lines of 65 characters or longer.&lt;br&gt;&lt;br&gt;&lt;pre&gt;ruby -ne 'print if $_.size &amp;amp;gt; 64'
-&lt;/pre&gt;&lt;br&gt;Print only lines shorter than 65 characters.&lt;br&gt;&lt;br&gt;&lt;pre&gt;ruby -ne 'print if $_.size &amp;amp;lt; 65'
-&lt;/pre&gt;&lt;br&gt;Print section of file from regular expression to end of file.&lt;br&gt;&lt;br&gt;&lt;pre&gt;ruby -ne 'print $_,*readlines if ~/regex/'
-&lt;/pre&gt;&lt;br&gt;Print section of file comprised between numbered lines (e.g. lines 8-12, inclusive).&lt;br&gt;&lt;br&gt;&lt;pre&gt;ruby -ne 'print if (8..12)===$.'
-ruby -ne 'print if (8..12).include?($.)'
-&lt;/pre&gt;&lt;br&gt;Print line 52.&lt;br&gt;&lt;br&gt;&lt;pre&gt;ruby -ne 'print if $.==52'
-&lt;/pre&gt;&lt;br&gt;Print section of file between two regular expressions (inclusive).&lt;br&gt;&lt;br&gt;&lt;pre&gt;ruby -ne 'if $in; print; $in = !(~/Montana/); else; \
-    $in = ~/Iowa/; print if $in; end'
-&lt;/pre&gt;&lt;br&gt;&lt;strong&gt;Selective deletion of certain lines&lt;/strong&gt;&lt;br&gt;&lt;br&gt;Delete all blank lines from a file (same as &lt;code&gt;grep '.'&lt;/code&gt;).&lt;br&gt;&lt;br&gt;&lt;pre&gt;ruby -ne 'print unless ~/^$/'
-ruby -ne 'print if ~/./'
-ruby -ne 'print if $_.chomp.size &amp;amp;gt; 0'
-&lt;/pre&gt;&lt;br&gt;Remove consecutive duplicate lines (emulates &lt;code&gt;uniq&lt;/code&gt;).&lt;br&gt;&lt;br&gt;&lt;pre&gt;ruby -ne 'print if $_ != $prev; $prev = $_'
-&lt;/pre&gt;&lt;br&gt;Remove nonconsecutive duplicate lines.&lt;br&gt;&lt;br&gt;&lt;pre&gt;ruby -ne 'BEGIN{$h={}}; print unless $h[$_]; $h[$_] = $_'
-ruby -e 'print *readlines.uniq'
-&lt;/pre&gt;&lt;br&gt;&lt;br&gt;</description>
-<category>Ruby</category>
-<link>null#%5B%5BRuby%20One%20Liners%5D%5D</link>
-<pubDate>Thu, 01 Dec 2011 14:35:00 GMT</pubDate>
-
-</item>
-<item>
-<title>AdvancedOptions</title>
-<description>&lt;form class=&quot;wizard&quot;&gt;&lt;h1&gt;Tweak advanced options&lt;/h1&gt;&lt;div class=&quot;wizardBody&quot;&gt;&lt;div&gt;&lt;h2&gt;These options are saved in cookies in your browser&lt;/h2&gt;&lt;div class=&quot;wizardStep&quot;&gt;&lt;div&gt;&lt;table class=&quot;listView twtable&quot;&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Option&lt;/th&gt;&lt;th&gt;Description&lt;/th&gt;&lt;th&gt;Name&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;&lt;input title=&quot;Enable animations&quot; class=&quot;chkOptionInput&quot; option=&quot;chkAnimate&quot; type=&quot;checkbox&quot;&gt;&lt;/td&gt;&lt;td&gt;Enable animations&lt;/td&gt;&lt;td&gt;chkAnimate&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;input title=&quot;Automatically save changes&quot; class=&quot;chkOptionInput&quot; option=&quot;chkAutoSave&quot; type=&quot;checkbox&quot;&gt;&lt;/td&gt;&lt;td&gt;Automatically save changes&lt;/td&gt;&lt;td&gt;chkAutoSave&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;input title=&quot;Name of folder to use for backups&quot; class=&quot;txtOptionInput&quot; option=&quot;txtBackupFolder&quot;&gt;&lt;/td&gt;&lt;td&gt;Name of folder to use for backups&lt;/td&gt;&lt;td&gt;txtBackupFolder&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;input title=&quot;Case-sensitive searching&quot; class=&quot;chkOptionInput&quot; option=&quot;chkCaseSensitiveSearch&quot; type=&quot;checkbox&quot;&gt;&lt;/td&gt;&lt;td&gt;Case-sensitive searching&lt;/td&gt;&lt;td&gt;chkCaseSensitiveSearch&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;input title=&quot;Require confirmation before deleting tiddlers&quot; class=&quot;chkOptionInput&quot; option=&quot;chkConfirmDelete&quot; type=&quot;checkbox&quot;&gt;&lt;/td&gt;&lt;td&gt;Require confirmation before deleting tiddlers&lt;/td&gt;&lt;td&gt;chkConfirmDelete&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;input title=&quot;Default character set for saving changes (Firefox/Mozilla only)&quot; class=&quot;txtOptionInput&quot; option=&quot;txtFileSystemCharSet&quot;&gt;&lt;/td&gt;&lt;td&gt;Default character set for saving changes (Firefox/Mozilla only)&lt;/td&gt;&lt;td&gt;txtFileSystemCharSet&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;input title=&quot;Don't update modifier username and date when editing tiddlers&quot; class=&quot;chkOptionInput&quot; option=&quot;chkForceMinorUpdate&quot; type=&quot;checkbox&quot;&gt;&lt;/td&gt;&lt;td&gt;Don't update modifier username and date when editing tiddlers&lt;/td&gt;&lt;td&gt;chkForceMinorUpdate&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;input title=&quot;Generate an RSS feed when saving changes&quot; class=&quot;chkOptionInput&quot; option=&quot;chkGenerateAnRssFeed&quot; type=&quot;checkbox&quot;&gt;&lt;/td&gt;&lt;td&gt;Generate an RSS feed when saving changes&lt;/td&gt;&lt;td&gt;chkGenerateAnRssFeed&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;input title=&quot;Hide editing features when viewed over HTTP&quot; class=&quot;chkOptionInput&quot; option=&quot;chkHttpReadOnly&quot; type=&quot;checkbox&quot;&gt;&lt;/td&gt;&lt;td&gt;Hide editing features when viewed over HTTP&lt;/td&gt;&lt;td&gt;chkHttpReadOnly&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;input title=&quot;Incremental key-by-key searching&quot; class=&quot;chkOptionInput&quot; option=&quot;chkIncrementalSearch&quot; type=&quot;checkbox&quot;&gt;&lt;/td&gt;&lt;td&gt;Incremental key-by-key searching&lt;/td&gt;&lt;td&gt;chkIncrementalSearch&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;input title=&quot;Use the tab key to insert tab characters instead of moving between fields&quot; class=&quot;chkOptionInput&quot; option=&quot;chkInsertTabs&quot; type=&quot;checkbox&quot;&gt;&lt;/td&gt;&lt;td&gt;Use the tab key to insert tab characters instead of moving between fields&lt;/td&gt;&lt;td&gt;chkInsertTabs&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;input title=&quot;Maximum number of rows in edit boxes&quot; class=&quot;txtOptionInput&quot; option=&quot;txtMaxEditRows&quot;&gt;&lt;/td&gt;&lt;td&gt;Maximum number of rows in edit boxes&lt;/td&gt;&lt;td&gt;txtMaxEditRows&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;input title=&quot;Open external links in a new window&quot; class=&quot;chkOptionInput&quot; option=&quot;chkOpenInNewWindow&quot; type=&quot;checkbox&quot;&gt;&lt;/td&gt;&lt;td&gt;Open external links in a new window&lt;/td&gt;&lt;td&gt;chkOpenInNewWindow&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;input title=&quot;Enable regular expressions for searches&quot; class=&quot;chkOptionInput&quot; option=&quot;chkRegExpSearch&quot; type=&quot;checkbox&quot;&gt;&lt;/td&gt;&lt;td&gt;Enable regular expressions for searches&lt;/td&gt;&lt;td&gt;chkRegExpSearch&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;input title=&quot;Keep backup file when saving changes&quot; class=&quot;chkOptionInput&quot; option=&quot;chkSaveBackups&quot; type=&quot;checkbox&quot;&gt;&lt;/td&gt;&lt;td&gt;Keep backup file when saving changes&lt;/td&gt;&lt;td&gt;chkSaveBackups&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;input title=&quot;Generate an empty template when saving changes&quot; class=&quot;chkOptionInput&quot; option=&quot;chkSaveEmptyTemplate&quot; type=&quot;checkbox&quot;&gt;&lt;/td&gt;&lt;td&gt;Generate an empty template when saving changes&lt;/td&gt;&lt;td&gt;chkSaveEmptyTemplate&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;input title=&quot;Name of the theme to use&quot; class=&quot;txtOptionInput&quot; option=&quot;txtTheme&quot;&gt;&lt;/td&gt;&lt;td&gt;Name of the theme to use&lt;/td&gt;&lt;td&gt;txtTheme&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;input title=&quot;Clicking on links to open tiddlers causes them to close&quot; class=&quot;chkOptionInput&quot; option=&quot;chkToggleLinks&quot; type=&quot;checkbox&quot;&gt;&lt;/td&gt;&lt;td&gt;Clicking on links to open tiddlers causes them to close&lt;/td&gt;&lt;td&gt;chkToggleLinks&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;input title=&quot;Username for signing your edits&quot; class=&quot;txtOptionInput&quot; option=&quot;txtUserName&quot;&gt;&lt;/td&gt;&lt;td&gt;Username for signing your edits&lt;/td&gt;&lt;td&gt;txtUserName&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/div&gt;&lt;input name=&quot;markList&quot; type=&quot;hidden&quot;&gt;&lt;br&gt;&lt;input checked=&quot;false&quot; name=&quot;chkUnknown&quot; type=&quot;checkbox&quot;&gt;Show unknown options&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;wizardFooter&quot;&gt;&lt;/div&gt;&lt;/form&gt;</description>
-<link>null#AdvancedOptions</link>
-<pubDate>Wed, 23 Nov 2011 11:57:00 GMT</pubDate>
-
-</item>
-<item>
-<title>Creating a Fake Server</title>
-<description>Netcat is your man&lt;br&gt;&lt;pre&gt;nc -kl  8002
+<title>Removing spaces from filenames - renaming files</title>
+<description>&lt;pre&gt;find . -name '* *' | while read file; do target=`echo &quot;$file&quot; | sed 's/ /_/g'`; echo &quot;Renaming '$file' to '$target'&quot;; mv &quot;$file&quot; &quot;$target&quot;; done;
 &lt;/pre&gt;</description>
-<category>Linux</category>
-<link>null#%5B%5BCreating%20a%20Fake%20Server%5D%5D</link>
-<pubDate>Tue, 22 Nov 2011 21:27:00 GMT</pubDate>
+<category>Bash</category>
+<link>null#%5B%5BRemoving%20spaces%20from%20filenames%20-%20renaming%20files%5D%5D</link>
+<pubDate>Tue, 20 Mar 2012 10:12:00 GMT</pubDate>
 
 </item>
 <item>
-<title>Renaming Master Branch on Git</title>
-<description>This is from &lt;a target=&quot;_blank&quot; title=&quot;External link to http://www.dmo.ca/blog/20080307124544/&quot; href=&quot;http://www.dmo.ca/blog/20080307124544/&quot; class=&quot;externalLink&quot;&gt;http://www.dmo.ca/blog/20080307124544/&lt;/a&gt;&lt;br&gt;    First, in your working tree, locally rename master to something else.&lt;br&gt;&lt;pre&gt;    git branch -m master old-dev
-&lt;/pre&gt;    Renaming a branch does work while you are on the branch, so there's no need to checkout something else.&lt;br&gt;&lt;br&gt;    Then, locally rename the maintenance branch (2.63-branch) to master:&lt;br&gt;&lt;pre&gt;    git branch -m 2.63-branch master
-&lt;/pre&gt;    Now, time to mess with the remote. Just in case you screw up, you might want to make sure you have a current backup. First, delete the remote's master:&lt;br&gt;&lt;pre&gt;    git push origin :master
-&lt;/pre&gt;    And now, give the remote your new master:&lt;br&gt;&lt;pre&gt;    git push origin master:refs/heads/master
-&lt;/pre&gt;    Update: When creating a new branch, the refs/heads/ prefix is needed on the remote side. If the branch already exists (as master did above) only the branch name is required on the remote side.&lt;br&gt;&lt;br&gt;    ... and your now-renamed old master:&lt;br&gt;&lt;pre&gt;    git push origin old-dev:refs/heads/old-dev
-&lt;/pre&gt;    Finally, delete the old name of your maintenance branch to prevent confusion:&lt;br&gt;&lt;pre&gt;    git push origin :2.63-branch
-&lt;/pre&gt;Clients will now get the 'new' master branch when they pull.</description>
-<category>Git</category>
-<link>null#%5B%5BRenaming%20Master%20Branch%20on%20Git%5D%5D</link>
-<pubDate>Tue, 22 Nov 2011 11:00:00 GMT</pubDate>
-
-</item>
-<item>
-<title>Macros in Vim</title>
-<description>1.    Start recording by pressing q, followed by a lower case character to name the macro&lt;br&gt;2.    Perform any typical editing, actions inside Vim editor, which will be recorded&lt;br&gt;3.    Stop recording by pressing q&lt;br&gt;4.    Play the recorded macro by pressing @ followed by the macro name&lt;br&gt;5.    To repeat macros multiple times, press : NN @ macro name. NN is a number&lt;br&gt;</description>
-<category>Vim</category>
-<link>null#%5B%5BMacros%20in%20Vim%5D%5D</link>
-<pubDate>Mon, 21 Nov 2011 14:32:00 GMT</pubDate>
-
-</item>
-<item>
-<title>RagTag Vim Plugin</title>
-<description>to add a tagify a word&lt;br&gt;&lt;pre&gt;CTRL+X /       Close the last open HTML tag
-CTRL+X SPACE   Create open/close HTML tags from the typed word
-CTRL+X CR      The same as CTRL+X SPACE but puts a newspace in between
-CTRL+X !       Insert HTML doctype
-CTRL+X @       Insert CSS stylesheet
-CTRL+X #       Insert meta content-type meta tag
-CTRL+X $       Load JavaScript document
+<title>Get all the listening ports on a Mac</title>
+<description>&lt;pre&gt;netstat -at | grep -i &quot;listen&quot;
 &lt;/pre&gt;</description>
-<category>Vim</category>
-<link>null#%5B%5BRagTag%20Vim%20Plugin%5D%5D</link>
-<pubDate>Sun, 13 Nov 2011 14:05:00 GMT</pubDate>
+<category>Mac</category>
+<category>Bash</category>
+<link>null#%5B%5BGet%20all%20the%20listening%20ports%20on%20a%20Mac%5D%5D</link>
+<pubDate>Tue, 20 Mar 2012 10:03:00 GMT</pubDate>
 
 </item>
 <item>
-<title>Creating a named stash</title>
-<description>&lt;pre&gt;git stash save &quot;Put a message here to remind you of what you're saving to the clipboard&quot;
+<title>Tar a directory</title>
+<description>&lt;pre&gt;tar cvzf foo.tgz cps100
+&lt;/pre&gt;will tar the directory cps100 (and its files/subdirectories) into a tar file named foo.tgz. </description>
+<category>Bash</category>
+<link>null#%5B%5BTar%20a%20directory%5D%5D</link>
+<pubDate>Tue, 20 Mar 2012 10:02:00 GMT</pubDate>
+
+</item>
+<item>
+<title>Terminal Changing Text</title>
+<description>Moves the cursor to the start of a line&lt;br&gt;&lt;pre&gt;ctrl+a or Home
+&lt;/pre&gt;&lt;br&gt;Moves the cursor to the end of a line.&lt;br&gt;&lt;pre&gt;ctrl+e or End
+&lt;/pre&gt;&lt;br&gt;Moves to the beginning of the previous or current word.&lt;br&gt;&lt;pre&gt;ctrl+b
+&lt;/pre&gt;&lt;br&gt;Deletes from the current cursor position to the end of the line.&lt;br&gt;&lt;pre&gt;ctrl+k
+&lt;/pre&gt;&lt;br&gt;Deletes the whole of the current line.&lt;br&gt;&lt;pre&gt;ctrl+u
+&lt;/pre&gt;&lt;br&gt;Deletes the word before the cursor.&lt;br&gt;&lt;pre&gt;ctrl+w
 &lt;/pre&gt;</description>
-<category>Git</category>
-<link>null#%5B%5BCreating%20a%20named%20stash%5D%5D</link>
-<pubDate>Wed, 09 Nov 2011 11:52:00 GMT</pubDate>
-
-</item>
-<item>
-<title>Apps on my Android Nov 2011</title>
-<description>Kindle&lt;br&gt;a Nap&lt;br&gt;App 2SD&lt;br&gt;Dragon Fly&lt;br&gt;Opera&lt;br&gt;Ever Paper&lt;br&gt;Live London Bus Tracker&lt;br&gt;London Journey&lt;br&gt;News Rob&lt;br&gt;Packing List Lite&lt;br&gt;TLDR&lt;br&gt;Train Times UK&lt;br&gt;Tweet Deck&lt;br&gt;Windfinder PRO&lt;br&gt;SMS Backup</description>
-<category>Android</category>
-<category>Phone</category>
-<link>null#%5B%5BApps%20on%20my%20Android%20Nov%202011%5D%5D</link>
-<pubDate>Thu, 03 Nov 2011 11:56:00 GMT</pubDate>
-
-</item>
-<item>
-<title>Autorename on Tmux</title>
-<description>Automatic window renaming not working, even when “setw -g automatic-rename off” was in the conf file. The issue was it was conflicting with oh-my-zsh. If you delete the /oh-my-zsh/lib/termsupport.zsh file. It fixed my renaming issue.</description>
-<category>Tmux</category>
-<link>null#%5B%5BAutorename%20on%20Tmux%5D%5D</link>
-<pubDate>Tue, 01 Nov 2011 15:57:00 GMT</pubDate>
+<category>Bash</category>
+<link>null#%5B%5BTerminal%20Changing%20Text%5D%5D</link>
+<pubDate>Tue, 20 Mar 2012 10:02:00 GMT</pubDate>
 
 </item>
 <item>
@@ -354,24 +101,111 @@ CTRL+X $       Load JavaScript document
 &lt;/pre&gt;&lt;br&gt;To extract the contents of a tar file use:&lt;br&gt;&lt;pre&gt;    tar xvzf foo.tgz
 &lt;/pre&gt;</description>
 <category>Tar</category>
-<category>Linux</category>
+<category>Bash</category>
 <link>null#%5B%5BUsing%20Tar%5D%5D</link>
-<pubDate>Wed, 26 Oct 2011 19:42:00 GMT</pubDate>
+<pubDate>Tue, 20 Mar 2012 10:02:00 GMT</pubDate>
 
 </item>
 <item>
-<title>Output MySql Query To CSV</title>
-<description>&lt;pre&gt;SELECT order_id,product_name,qty
-FROM orders
-INTO OUTFILE '/tmp/orders.csv'
-FIELDS TERMINATED BY ','
-ENCLOSED BY '&quot;'
-LINES TERMINATED BY '\n'
-&lt;/pre&gt;&lt;br&gt;or you can do it from the command line&lt;br&gt;&lt;pre&gt;mysql -u USER -p -h HOST DATABASE -e &quot;select recipient from failed_messages where custom_attribute=5893&quot; &amp;gt; ~/failed_msisdns.txt
+<title>Using the at command for delayed jobs</title>
+<description>&lt;pre&gt;dtownsend@n-jump:~$ at 9:51
+warning: commands will be executed using /bin/sh
+at&amp;gt; touch delme.txt
+at&amp;gt; &amp;lt;EOT&amp;gt;
+&lt;/pre&gt;Hit Ctrl d&lt;br&gt;&lt;pre&gt;job 2 at Mon Oct 10 09:51:00 2011
 &lt;/pre&gt;</description>
-<category>MySql</category>
-<link>null#%5B%5BOutput%20MySql%20Query%20To%20CSV%5D%5D</link>
-<pubDate>Fri, 21 Oct 2011 15:56:00 GMT</pubDate>
+<category>Bash</category>
+<link>null#%5B%5BUsing%20the%20at%20command%20for%20delayed%20jobs%5D%5D</link>
+<pubDate>Tue, 20 Mar 2012 10:02:00 GMT</pubDate>
+
+</item>
+<item>
+<title>Sniff a Port with ngrep</title>
+<description>&lt;pre&gt;sudo ngrep -d lo port 8000
+&lt;/pre&gt;</description>
+<category>Bash</category>
+<category>Ngrep</category>
+<link>null#%5B%5BSniff%20a%20Port%20with%20ngrep%5D%5D</link>
+<pubDate>Tue, 20 Mar 2012 10:01:00 GMT</pubDate>
+
+</item>
+<item>
+<title>Search and Replace Across Multiple Files</title>
+<description>&lt;pre&gt;perl -p -i -e&quot;s#param_dict#util_dict#g&quot; `git grep &quot;param_dict&quot; | cut -d: -f1 | sort | uniq`
+&lt;/pre&gt;</description>
+<category>Bash</category>
+<link>null#%5B%5BSearch%20and%20Replace%20Across%20Multiple%20Files%5D%5D</link>
+<pubDate>Tue, 20 Mar 2012 09:59:00 GMT</pubDate>
+
+</item>
+<item>
+<title>Move Empty Files To New Directory</title>
+<description>ls -al | grep -i .log$ | awk '$5==0 {print $8}'  |  xargs -I {} mv {} old_logs/</description>
+<category>Bash</category>
+<link>null#%5B%5BMove%20Empty%20Files%20To%20New%20Directory%5D%5D</link>
+<pubDate>Tue, 20 Mar 2012 09:57:00 GMT</pubDate>
+
+</item>
+<item>
+<title>Moving Files more that 5 days old</title>
+<description>&lt;pre&gt;sudo find ./ -type f -name &quot;mt_requests*.log&quot; -mtime +5 -exec nice gzip -v --fast {} \;
+&lt;/pre&gt;</description>
+<category>Bash</category>
+<link>null#%5B%5BMoving%20Files%20more%20that%205%20days%20old%5D%5D</link>
+<pubDate>Tue, 20 Mar 2012 09:57:00 GMT</pubDate>
+
+</item>
+<item>
+<title>Parametise Xargs</title>
+<description>Use 'I' to mark what you want to call the passed in parameter.&lt;br&gt;&lt;pre&gt;xargs -I {} mv {} old_logs
+&lt;/pre&gt;</description>
+<category>Bash</category>
+<link>null#%5B%5BParametise%20Xargs%5D%5D</link>
+<pubDate>Tue, 20 Mar 2012 09:57:00 GMT</pubDate>
+
+</item>
+<item>
+<title>Doing a Diff on Two Directories</title>
+<description>&lt;pre&gt;find . -type f -not -exec cmp {} ..//poo2/{} &quot;;&quot; -print
+&lt;/pre&gt;</description>
+<category>Bash</category>
+<link>null#%5B%5BDoing%20a%20Diff%20on%20Two%20Directories%5D%5D</link>
+<pubDate>Tue, 20 Mar 2012 09:56:00 GMT</pubDate>
+
+</item>
+<item>
+<title>Find Files modified since</title>
+<description>&lt;pre&gt;find /path -mtime -90
+&lt;/pre&gt;Where 90 is the number of days since Jan 1st.</description>
+<category>Bash</category>
+<link>null#%5B%5BFind%20Files%20modified%20since%5D%5D</link>
+<pubDate>Tue, 20 Mar 2012 09:56:00 GMT</pubDate>
+
+</item>
+<item>
+<title>Making a POST request with curl</title>
+<description>&lt;pre&gt;curl -v -H &quot;Content-Type: application/json&quot; -X POST -d '{&quot;username&quot;:&quot;bob&quot;}' http://localhost:8000/orgs/itv/users
+&lt;/pre&gt;</description>
+<category>Curl</category>
+<category>Bash</category>
+<link>null#%5B%5BMaking%20a%20POST%20request%20with%20curl%5D%5D</link>
+<pubDate>Tue, 20 Mar 2012 09:56:00 GMT</pubDate>
+
+</item>
+<item>
+<title>Making child folders in unix</title>
+<description>&lt;pre&gt;mkdir -p /project/src
+&lt;/pre&gt;</description>
+<category>Bash</category>
+<link>null#%5B%5BMaking%20child%20folders%20in%20unix%5D%5D</link>
+<pubDate>Tue, 20 Mar 2012 09:56:00 GMT</pubDate>
+
+</item>
+<item>
+<title>Append To Bash History File</title>
+<description>Now, say I type a really long command, e.g. a huge long Perl one-liner, in one terminal, and I want to then access and run that command in another terminal via bash history. With bash's default behavior, I can't do it; each terminal has its own history. What I could do is type &lt;br&gt;&lt;code&gt;history -a&lt;/code&gt;&lt;br&gt; in the first terminal, and&lt;br&gt;&lt;code&gt;history -n&lt;/code&gt;&lt;br&gt; in the second terminal; then it'd work wonderfully.</description>
+<link>null#%5B%5BAppend%20To%20Bash%20History%20File%5D%5D</link>
+<pubDate>Tue, 20 Mar 2012 01:51:00 GMT</pubDate>
 
 </item>
 </channel>

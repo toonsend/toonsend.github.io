@@ -622,6 +622,19 @@ nc -kl  8002
 git stash save &quot;Put a message here to remind you of what you're saving to the clipboard&quot;
 }}}</pre>
 </div>
+<div title="Creating a new MySql User." creator="Toons" modifier="Toons" created="201204041420" changecount="1">
+<pre>{{{
+mysql&gt; CREATE USER 'monty'@'localhost' IDENTIFIED BY 'some_pass';
+mysql&gt; GRANT ALL PRIVILEGES ON *.* TO 'monty'@'localhost'
+    -&gt;     WITH GRANT OPTION;
+mysql&gt; CREATE USER 'monty'@'%' IDENTIFIED BY 'some_pass';
+mysql&gt; GRANT ALL PRIVILEGES ON *.* TO 'monty'@'%'
+    -&gt;     WITH GRANT OPTION;
+mysql&gt; CREATE USER 'admin'@'localhost';
+mysql&gt; GRANT RELOAD,PROCESS ON *.* TO 'admin'@'localhost';
+mysql&gt; CREATE USER 'dummy'@'localhost';
+}}}</pre>
+</div>
 <div title="Ctrl N Go Down on Autocomplete" modifier="Toons" created="201107121204" tags="Vim" server.page.revision="201107121204" server.host="file:///Users/dtownsend/Dropbox/tiddly/index.html" server.type="file">
 <pre>{{{
 ctrl n
@@ -651,7 +664,7 @@ git push origin :newfeature
 
 [img[images/disk_space/du1.JPG]]</pre>
 </div>
-<div title="Doing a Diff on Two Directories" modifier="Toons" created="201106230907" tags="Linux" server.page.revision="201106230907" server.host="file:///Users/dtownsend/Dropbox/tiddly/index.html" server.type="file">
+<div title="Doing a Diff on Two Directories" modifier="Toons" created="201106230907" modified="201203200956" tags="Bash" server.page.revision="201106230907" server.host="file:///Users/dtownsend/Dropbox/tiddly/index.html" server.type="file" changecount="1">
 <pre>{{{
 find . -type f -not -exec cmp {} ..//poo2/{} &quot;;&quot; -print
 }}}</pre>
@@ -688,18 +701,39 @@ time_to_go(TimeOut={{_,_,_}, {_,_,_}}) -&gt;
 
 }}}</pre>
 </div>
-<div title="Find Files modified since" modifier="Toons" created="201106171112" modified="201106222046" tags="Linux" server.page.revision="201106222046" server.host="file:///Users/dtownsend/Dropbox/tiddly/index.html" server.type="file">
+<div title="Find Files modified since" modifier="Toons" created="201106171112" modified="201203200956" tags="Bash" server.page.revision="201106222046" server.host="file:///Users/dtownsend/Dropbox/tiddly/index.html" server.type="file" changecount="1">
 <pre>{{{
 find /path -mtime -90
 }}}
 Where 90 is the number of days since Jan 1st.</pre>
+</div>
+<div title="Fixing Tmux Cut and Paste" creator="Toons" modifier="Toons" created="201204070514" modified="201204070514" changecount="2">
+<pre>Tmux is becoming pretty popular as of late, but as with any new technology, there are skeptics. I’m here to quell some rumors and outline how to start using Tmux effectively.
+
+Out of all the questions I get, the most common is, “Does copying and pasting work in Tmux? I heard it wasn’t possible.” Forget that noise; copying and pasting works wonderfully with a couple of extra steps.
+
+http://robots.thoughtbot.com/post/19398560514/how-to-copy-and-paste-with-tmux-on-mac-os-x</pre>
 </div>
 <div title="Flush Mac's DNS Cache" modifier="Toons" created="201108041123" tags="Mac DNS" server.page.revision="201108041123" server.host="file:///Users/dtownsend/Dropbox/tiddly/index.html" server.type="file">
 <pre>{{{
 dscacheutil -flushcache
 }}}</pre>
 </div>
-<div title="Get all the listening ports on a Mac" modifier="Toons" created="201107271306" tags="Mac Linux" server.page.revision="201107271306" server.host="file:///Users/dtownsend/Dropbox/tiddly/index.html" server.type="file">
+<div title="Forgetting to run screen" creator="Toons" modifier="Toons" created="201203220914" modified="201203220914" tags="bash" changecount="2">
+<pre>So I'm in a friend's house and I've been doing some compwinner work when I realised there is no way this alter table is going to finish before I go home and I forgot to run screen. A conversation with Toons came in to my head and I suddenly remembered something. 
+If you do make this mistake you can get around it as follows
+{{{
+CTRL-z   suspends your current process
+bg backgrounds it
+disown %1 detaches it from your pts
+}}}
+
+hey presto you now can go shut the terminal, go away and it'll keep running in the background. :)
+Obviously unlike in screen, you can't get it back, but at least you haven't wasted 4 hours
+
+DMC</pre>
+</div>
+<div title="Get all the listening ports on a Mac" modifier="Toons" created="201107271306" modified="201203201003" tags="Mac Bash" server.page.revision="201107271306" server.host="file:///Users/dtownsend/Dropbox/tiddly/index.html" server.type="file" changecount="1">
 <pre>{{{
 netstat -at | grep -i &quot;listen&quot;
 }}}</pre>
@@ -764,6 +798,11 @@ Haemoglobin Theme
 </div>
 <div title="Home" modifier="Toons" created="201201241217" server.page.revision="201201241217" server.host="file:///Users/dtownsend/Dropbox/tiddly/index.html" server.type="file">
 <pre>&lt;&lt;timeline &quot;modified&quot; 12&gt;&gt;</pre>
+</div>
+<div title="How to fix the backspace key in screen" creator="Toons" modifier="Toons" created="201203201031" changecount="1">
+<pre>{{{
+alias screen='TERM=screen screen'
+}}}</pre>
 </div>
 <div title="How to setup log rotation for Rails apps" modifier="Toons" created="201109151111" server.page.revision="201109151111" server.host="file:///Users/dtownsend/Dropbox/tiddly/index.html" server.type="file">
 <pre>I’m sure we’ve all been there. You’ve been tasked with fixing a Rails app, you go in for some debugging magic and find the production.log is 3GB and counting as nobody bothered to setup log rotation. Here is how to avoid that…
@@ -843,17 +882,17 @@ Command-Control-Shift-4, then space, then click a window
 <div title="MainMenu" modifier="toons" created="201106111219" modified="201106111301" server.page.revision="201106111301" server.host="file:///Users/dtownsend/Dropbox/tiddly/index.html" server.type="file">
 <pre>[[Home]][[Help]]</pre>
 </div>
-<div title="Making a POST request with curl" modifier="Toons" created="201109220943" tags="Curl Linux" server.page.revision="201109220943" server.host="file:///Users/dtownsend/Dropbox/tiddly/index.html" server.type="file">
+<div title="Making a POST request with curl" modifier="Toons" created="201109220943" modified="201203200956" tags="Curl Bash" server.page.revision="201109220943" server.host="file:///Users/dtownsend/Dropbox/tiddly/index.html" server.type="file" changecount="1">
 <pre>{{{
 curl -v -H &quot;Content-Type: application/json&quot; -X POST -d '{&quot;username&quot;:&quot;bob&quot;}' http://localhost:8000/orgs/itv/users
 }}}</pre>
 </div>
-<div title="Making child folders in unix" modifier="Toons" created="201106121312" modified="201106222047" tags="Linux" server.page.revision="201106222047" server.host="file:///Users/dtownsend/Dropbox/tiddly/index.html" server.type="file">
+<div title="Making child folders in unix" modifier="Toons" created="201106121312" modified="201203200956" tags="Bash" server.page.revision="201106222047" server.host="file:///Users/dtownsend/Dropbox/tiddly/index.html" server.type="file" changecount="1">
 <pre>{{{
 mkdir -p /project/src
 }}}</pre>
 </div>
-<div title="Move Empty Files To New Directory" modifier="Toons" created="201108221534" tags="Linux" server.page.revision="201108221534" server.host="file:///Users/dtownsend/Dropbox/tiddly/index.html" server.type="file">
+<div title="Move Empty Files To New Directory" modifier="Toons" created="201108221534" modified="201203200957" tags="Bash" server.page.revision="201108221534" server.host="file:///Users/dtownsend/Dropbox/tiddly/index.html" server.type="file" changecount="1">
 <pre>ls -al | grep -i .log$ | awk '$5==0 {print $8}'  |  xargs -I {} mv {} old_logs/</pre>
 </div>
 <div title="Move Yanked Text into a Register" modifier="Toons" created="201107291119" tags="Vim" server.page.revision="201107291119" server.host="file:///Users/dtownsend/Dropbox/tiddly/index.html" server.type="file">
@@ -863,7 +902,7 @@ mkdir -p /project/src
 
 You can obviously add this to your vimrc</pre>
 </div>
-<div title="Moving Files more that 5 days old" modifier="Toons" created="201110131723" tags="Linux" server.page.revision="201110131723" server.host="file:///Users/dtownsend/Dropbox/tiddly/index.html" server.type="file">
+<div title="Moving Files more that 5 days old" modifier="Toons" created="201110131723" modified="201203200957" tags="Bash" server.page.revision="201110131723" server.host="file:///Users/dtownsend/Dropbox/tiddly/index.html" server.type="file" changecount="1">
 <pre>{{{
 sudo find ./ -type f -name &quot;mt_requests*.log&quot; -mtime +5 -exec nice gzip -v --fast {} \;
 }}}
@@ -1002,7 +1041,7 @@ endif
 
 }}}</pre>
 </div>
-<div title="Parametise Xargs" modifier="Toons" created="201108231037" tags="Linux" server.page.revision="201108231037" server.host="file:///Users/dtownsend/Dropbox/tiddly/index.html" server.type="file">
+<div title="Parametise Xargs" modifier="Toons" created="201108231037" modified="201203200957" tags="Bash" server.page.revision="201108231037" server.host="file:///Users/dtownsend/Dropbox/tiddly/index.html" server.type="file" changecount="1">
 <pre>Use 'I' to mark what you want to call the passed in parameter.
 {{{
 xargs -I {} mv {} old_logs
@@ -1045,6 +1084,11 @@ git rm --cached path_to_submodule
 }}}
 * Commit and delete the now untracked submodule files.
 </pre>
+</div>
+<div title="Removing spaces from filenames - renaming files" creator="Toons" modifier="Toons" created="201203200955" modified="201203201012" tags="Bash" changecount="2">
+<pre>{{{
+find . -name '* *' | while read file; do target=`echo &quot;$file&quot; | sed 's/ /_/g'`; echo &quot;Renaming '$file' to '$target'&quot;; mv &quot;$file&quot; &quot;$target&quot;; done;
+}}}</pre>
 </div>
 <div title="Renaming Master Branch on Git" modifier="Toons" created="201111221059" modified="201111221100" tags="Git" server.page.revision="201111221100" server.host="file:///Users/dtownsend/Dropbox/tiddly/index.html" server.type="file">
 <pre>This is from http://www.dmo.ca/blog/20080307124544/
@@ -1581,7 +1625,7 @@ ruby -e 'print *readlines.uniq'
 
 </pre>
 </div>
-<div title="Search and Replace Across Multiple Files" modifier="Toons" created="201106291334" tags="Linux" server.page.revision="201106291334" server.host="file:///Users/dtownsend/Dropbox/tiddly/index.html" server.type="file">
+<div title="Search and Replace Across Multiple Files" modifier="Toons" created="201106291334" modified="201203200959" tags="Bash" server.page.revision="201106291334" server.host="file:///Users/dtownsend/Dropbox/tiddly/index.html" server.type="file" changecount="1">
 <pre>{{{
 perl -p -i -e&quot;s#param_dict#util_dict#g&quot; `git grep &quot;param_dict&quot; | cut -d: -f1 | sort | uniq`
 }}}</pre>
@@ -1599,7 +1643,7 @@ perl -p -i -e&quot;s#param_dict#util_dict#g&quot; `git grep &quot;param_dict&quo
 <div title="SiteTitle" modifier="Toons" created="201106111110" modified="201202161116" server.page.revision="201202161116" server.host="file:///Users/dtownsend/Dropbox/tiddly/index.html" server.type="file">
 <pre>&quot;&quot;&quot;ToonsWiki&quot;&quot;&quot;</pre>
 </div>
-<div title="Sniff a Port with ngrep" modifier="Toons" created="201107291307" tags="Linux Ngrep" server.page.revision="201107291307" server.host="file:///Users/dtownsend/Dropbox/tiddly/index.html" server.type="file">
+<div title="Sniff a Port with ngrep" modifier="Toons" created="201107291307" modified="201203201001" tags="Bash Ngrep" server.page.revision="201107291307" server.host="file:///Users/dtownsend/Dropbox/tiddly/index.html" server.type="file" changecount="1">
 <pre>{{{
 sudo ngrep -d lo port 8000
 }}}</pre>
@@ -2000,13 +2044,13 @@ http://pqrs.org/macosx/keyremap4macbook/extra.html
 
 [[PCKeyboardHack|http://pqrs.org/macosx/keyremap4macbook/extra.html]]</pre>
 </div>
-<div title="Tar a directory" modifier="Toons" created="201106171054" modified="201106222047" tags="Linux" server.page.revision="201106222047" server.host="file:///Users/dtownsend/Dropbox/tiddly/index.html" server.type="file">
+<div title="Tar a directory" modifier="Toons" created="201106171054" modified="201203201002" tags="Bash" server.page.revision="201106222047" server.host="file:///Users/dtownsend/Dropbox/tiddly/index.html" server.type="file" changecount="1">
 <pre>{{{
 tar cvzf foo.tgz cps100
 }}}
 will tar the directory cps100 (and its files/subdirectories) into a tar file named foo.tgz. </pre>
 </div>
-<div title="Terminal Changing Text" modifier="Toons" created="201107191311" modified="201107191313" tags="Linux" server.page.revision="201107191313" server.host="file:///Users/dtownsend/Dropbox/tiddly/index.html" server.type="file">
+<div title="Terminal Changing Text" modifier="Toons" created="201107191311" modified="201203201002" tags="Bash" server.page.revision="201107191313" server.host="file:///Users/dtownsend/Dropbox/tiddly/index.html" server.type="file" changecount="1">
 <pre>Moves the cursor to the start of a line
 {{{
 ctrl+a or Home
@@ -2143,7 +2187,7 @@ article.title_change  #=&gt; ['Title', 'TITLE']
 }}}
 And coming down the pipe is a feature that will make the most of this functionality – partial SQL updates that will only update attributes that have changed…</pre>
 </div>
-<div title="Using Tar" modifier="Toons" created="201110261942" tags="Tar Linux" server.page.revision="201110261942" server.host="file:///Users/dtownsend/Dropbox/tiddly/index.html" server.type="file">
+<div title="Using Tar" modifier="Toons" created="201110261942" modified="201203201002" tags="Tar Bash" server.page.revision="201110261942" server.host="file:///Users/dtownsend/Dropbox/tiddly/index.html" server.type="file" changecount="1">
 <pre>To tar all .cc and .h files into a tar file named foo.tgz use:
 {{{
     tar cvzf foo.tgz *.cc *.h
@@ -2167,7 +2211,7 @@ To extract the contents of a tar file use:
     tar xvzf foo.tgz
 }}}</pre>
 </div>
-<div title="Using the at command for delayed jobs" modifier="Toons" created="201110100951" tags="Linux" server.page.revision="201110100951" server.host="file:///Users/dtownsend/Dropbox/tiddly/index.html" server.type="file">
+<div title="Using the at command for delayed jobs" modifier="Toons" created="201110100951" modified="201203201002" tags="Bash" server.page.revision="201110100951" server.host="file:///Users/dtownsend/Dropbox/tiddly/index.html" server.type="file" changecount="1">
 <pre>{{{
 dtownsend@n-jump:~$ at 9:51
 warning: commands will be executed using /bin/sh
