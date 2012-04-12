@@ -5,15 +5,53 @@
 <description>a place for stuff</description>
 <language>en</language>
 <copyright>Copyright 2012 Toons</copyright>
-<pubDate>Sat, 07 Apr 2012 05:14:36 GMT</pubDate>
-<lastBuildDate>Sat, 07 Apr 2012 05:14:36 GMT</lastBuildDate>
+<pubDate>Thu, 12 Apr 2012 19:03:48 GMT</pubDate>
+<lastBuildDate>Thu, 12 Apr 2012 19:03:48 GMT</lastBuildDate>
 <docs>http://blogs.law.harvard.edu/tech/rss</docs>
 <generator>TiddlyWiki 2.6.5</generator>
+<item>
+<title>Date Format In Ruby</title>
+<description>Format meaning &lt;br&gt;&lt;br&gt;&lt;pre&gt;  %a - The abbreviated weekday name (``Sun'')
+  %A - The  full  weekday  name (``Sunday'')
+  %b - The abbreviated month name (``Jan'')
+  %B - The  full  month  name (``January'')
+  %c - The preferred local date and time representation
+  %d - Day of the month (01..31)
+  %H - Hour of the day, 24-hour clock (00..23)
+  %I - Hour of the day, 12-hour clock (01..12)
+  %j - Day of the year (001..366)
+  %m - Month of the year (01..12)
+  %M - Minute of the hour (00..59)
+  %p - Meridian indicator (``AM''  or  ``PM'')
+  %S - Second of the minute (00..60)
+  %U - Week  number  of the current year,
+          starting with the first Sunday as the first
+          day of the first week (00..53)
+  %W - Week  number  of the current year,
+          starting with the first Monday as the first
+          day of the first week (00..53)
+  %w - Day of the week (Sunday is 0, 0..6)
+  %x - Preferred representation for the date alone, no time
+  %X - Preferred representation for the time alone, no date
+  %y - Year without a century (00..99)
+  %Y - Year with century
+  %Z - Time zone name
+  %% - Literal ``%'' character
+
+   t = Time.now
+   t.strftime(&quot;Printed on %m/%d/%Y&quot;)   #=&amp;gt; &quot;Printed on 04/09/2003&quot;
+   t.strftime(&quot;at %I:%M%p&quot;)            #=&amp;gt; &quot;at 08:56AM&quot;
+&lt;/pre&gt;</description>
+<category>Ruby</category>
+<link>null#%5B%5BDate%20Format%20In%20Ruby%5D%5D</link>
+<pubDate>Thu, 12 Apr 2012 19:03:26 GMT</pubDate>
+
+</item>
 <item>
 <title>Fixing Tmux Cut and Paste</title>
 <description>Tmux is becoming pretty popular as of late, but as with any new technology, there are skeptics. I’m here to quell some rumors and outline how to start using Tmux effectively.&lt;br&gt;&lt;br&gt;Out of all the questions I get, the most common is, “Does copying and pasting work in Tmux? I heard it wasn’t possible.” Forget that noise; copying and pasting works wonderfully with a couple of extra steps.&lt;br&gt;&lt;br&gt;&lt;a target=&quot;_blank&quot; title=&quot;External link to http://robots.thoughtbot.com/post/19398560514/how-to-copy-and-paste-with-tmux-on-mac-os-x&quot; href=&quot;http://robots.thoughtbot.com/post/19398560514/how-to-copy-and-paste-with-tmux-on-mac-os-x&quot; class=&quot;externalLink&quot;&gt;http://robots.thoughtbot.com/post/19398560514/how-to-copy-and-paste-with-tmux-on-mac-os-x&lt;/a&gt;</description>
 <link>null#%5B%5BFixing%20Tmux%20Cut%20and%20Paste%5D%5D</link>
-<pubDate>Sat, 07 Apr 2012 05:14:25 GMT</pubDate>
+<pubDate>Sat, 07 Apr 2012 05:14:00 GMT</pubDate>
 
 </item>
 <item>
@@ -199,13 +237,6 @@ at&amp;gt; &amp;lt;EOT&amp;gt;
 <category>Bash</category>
 <link>null#%5B%5BMaking%20child%20folders%20in%20unix%5D%5D</link>
 <pubDate>Tue, 20 Mar 2012 09:56:00 GMT</pubDate>
-
-</item>
-<item>
-<title>Append To Bash History File</title>
-<description>Now, say I type a really long command, e.g. a huge long Perl one-liner, in one terminal, and I want to then access and run that command in another terminal via bash history. With bash's default behavior, I can't do it; each terminal has its own history. What I could do is type &lt;br&gt;&lt;code&gt;history -a&lt;/code&gt;&lt;br&gt; in the first terminal, and&lt;br&gt;&lt;code&gt;history -n&lt;/code&gt;&lt;br&gt; in the second terminal; then it'd work wonderfully.</description>
-<link>null#%5B%5BAppend%20To%20Bash%20History%20File%5D%5D</link>
-<pubDate>Tue, 20 Mar 2012 01:51:00 GMT</pubDate>
 
 </item>
 </channel>
