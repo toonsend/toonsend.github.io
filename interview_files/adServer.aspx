@@ -1,0 +1,1 @@
+//No eligible banners
