@@ -611,6 +611,24 @@ n(n) -&gt;
 $ chsh -s $(which zsh)
 }}}</pre>
 </div>
+<div title="Changing the hostname or computer name in ubuntu" creator="Toons" modifier="Toons" created="201204181030" modified="201204181031" tags="Linux" changecount="3">
+<pre>This is a really simple one, but can cause a lot of weeping and gnashing of teeth. You were given the default &quot;ubuntu&quot; hostname when you installed, and now you want something cooler that enhances your street cred. Heres how to change it:
+
+Edit /etc/hostname and change to the new value, you can use nano instead of vi, but remember that real men prefer vi.
+{{{
+vi /etc/hostname
+}}}
+
+Edit /etc/hosts and change the old 127.0.1.1 line to your new hostname (if you dont do this, you wont be able to use sudo anymore. If you hav e already done it, press ESC on the grub menu, choose recovery, and edit your host file to the correct settings)
+{{{
+127.0.0.1   localhost
+127.0.1.1   ubuntu.local    ubuntu   # change to your new hostname/fqdn
+}}}
+Now after a reboot, your hostname will be the new one you chose. To change without a reboot, you can just use hostname.sh after you edit /etc/hostname:
+{{{
+sudo /etc/init.d/hostname.sh start
+}}}</pre>
+</div>
 <div title="Creating a Fake Server" modifier="YourName" created="201111222127" tags="Linux" server.page.revision="201111222127" server.host="file:///Users/dtownsend/Dropbox/tiddly/index.html" server.type="file">
 <pre>Netcat is your man
 {{{

@@ -5,10 +5,22 @@
 <description>a place for stuff</description>
 <language>en</language>
 <copyright>Copyright 2012 Toons</copyright>
-<pubDate>Thu, 12 Apr 2012 19:03:48 GMT</pubDate>
-<lastBuildDate>Thu, 12 Apr 2012 19:03:48 GMT</lastBuildDate>
+<pubDate>Wed, 18 Apr 2012 10:31:55 GMT</pubDate>
+<lastBuildDate>Wed, 18 Apr 2012 10:31:55 GMT</lastBuildDate>
 <docs>http://blogs.law.harvard.edu/tech/rss</docs>
 <generator>TiddlyWiki 2.6.5</generator>
+<item>
+<title>Changing the hostname or computer name in ubuntu</title>
+<description>This is a really simple one, but can cause a lot of weeping and gnashing of teeth. You were given the default &quot;ubuntu&quot; hostname when you installed, and now you want something cooler that enhances your street cred. Heres how to change it:&lt;br&gt;&lt;br&gt;Edit /etc/hostname and change to the new value, you can use nano instead of vi, but remember that real men prefer vi.&lt;br&gt;&lt;pre&gt;vi /etc/hostname
+&lt;/pre&gt;&lt;br&gt;Edit /etc/hosts and change the old 127.0.1.1 line to your new hostname (if you dont do this, you wont be able to use sudo anymore. If you hav e already done it, press ESC on the grub menu, choose recovery, and edit your host file to the correct settings)&lt;br&gt;&lt;pre&gt;127.0.0.1   localhost
+127.0.1.1   ubuntu.local    ubuntu   # change to your new hostname/fqdn
+&lt;/pre&gt;Now after a reboot, your hostname will be the new one you chose. To change without a reboot, you can just use hostname.sh after you edit /etc/hostname:&lt;br&gt;&lt;pre&gt;sudo /etc/init.d/hostname.sh start
+&lt;/pre&gt;</description>
+<category>Linux</category>
+<link>null#%5B%5BChanging%20the%20hostname%20or%20computer%20name%20in%20ubuntu%5D%5D</link>
+<pubDate>Wed, 18 Apr 2012 10:31:13 GMT</pubDate>
+
+</item>
 <item>
 <title>Date Format In Ruby</title>
 <description>Format meaning &lt;br&gt;&lt;br&gt;&lt;pre&gt;  %a - The abbreviated weekday name (``Sun'')
@@ -44,7 +56,7 @@
 &lt;/pre&gt;</description>
 <category>Ruby</category>
 <link>null#%5B%5BDate%20Format%20In%20Ruby%5D%5D</link>
-<pubDate>Thu, 12 Apr 2012 19:03:26 GMT</pubDate>
+<pubDate>Thu, 12 Apr 2012 19:03:00 GMT</pubDate>
 
 </item>
 <item>
@@ -227,15 +239,6 @@ at&amp;gt; &amp;lt;EOT&amp;gt;
 <category>Curl</category>
 <category>Bash</category>
 <link>null#%5B%5BMaking%20a%20POST%20request%20with%20curl%5D%5D</link>
-<pubDate>Tue, 20 Mar 2012 09:56:00 GMT</pubDate>
-
-</item>
-<item>
-<title>Making child folders in unix</title>
-<description>&lt;pre&gt;mkdir -p /project/src
-&lt;/pre&gt;</description>
-<category>Bash</category>
-<link>null#%5B%5BMaking%20child%20folders%20in%20unix%5D%5D</link>
 <pubDate>Tue, 20 Mar 2012 09:56:00 GMT</pubDate>
 
 </item>
