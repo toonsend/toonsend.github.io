@@ -5,10 +5,31 @@
 <description>a place for stuff</description>
 <language>en</language>
 <copyright>Copyright 2012 Toons</copyright>
-<pubDate>Wed, 18 Apr 2012 10:31:55 GMT</pubDate>
-<lastBuildDate>Wed, 18 Apr 2012 10:31:55 GMT</lastBuildDate>
+<pubDate>Wed, 25 Apr 2012 12:05:35 GMT</pubDate>
+<lastBuildDate>Wed, 25 Apr 2012 12:05:35 GMT</lastBuildDate>
 <docs>http://blogs.law.harvard.edu/tech/rss</docs>
 <generator>TiddlyWiki 2.6.5</generator>
+<item>
+<title>Surround Vim Plugin</title>
+<description>Press cs&quot;' (that's c, s, double quote, single quote) inside &lt;br&gt;&lt;br&gt;&quot;Hello world!&quot; &lt;br&gt;&lt;br&gt;to change it to &lt;br&gt;&lt;br&gt;'Hello world!' &lt;br&gt;&lt;br&gt;Now press cs'&amp;lt;q&amp;gt; to change it to &lt;br&gt;&lt;br&gt;&amp;lt;q&amp;gt;Hello world!&amp;lt;/q&amp;gt; &lt;br&gt;&lt;br&gt;To go full circle, press cst&quot; to get &lt;br&gt;&lt;br&gt;&quot;Hello world!&quot; &lt;br&gt;&lt;br&gt;To remove the delimiters entirely, press ds&quot; . &lt;br&gt;&lt;br&gt;Hello world! &lt;br&gt;&lt;br&gt;Now with the cursor on &quot;Hello&quot;, press ysiw] (iw is a text object). &lt;br&gt;&lt;br&gt;[Hello] world! &lt;br&gt;&lt;br&gt;Let's make that braces and add some space (use &quot;}&quot; instead of &quot;{&quot; for no space): cs]{ &lt;br&gt;&lt;br&gt;{ Hello } world! &lt;br&gt;&lt;br&gt;Now wrap the entire line in parentheses with yssb or yss) . &lt;br&gt;&lt;br&gt;({ Hello } world!) &lt;br&gt;&lt;br&gt;Revert to the original text: ds{ds) &lt;br&gt;&lt;br&gt;Hello world! &lt;br&gt;&lt;br&gt;Emphasize hello: ysiw&amp;lt;em&amp;gt; &lt;br&gt;&lt;br&gt;&amp;lt;em&amp;gt;Hello&amp;lt;/em&amp;gt; world! &lt;br&gt;&lt;br&gt;Finally, let's try out visual mode. Press a capital V (for linewise visual mode) &lt;br&gt;followed by S&amp;lt;p class=&quot;important&quot;&amp;gt;. &lt;br&gt;&lt;br&gt;&amp;lt;p class=&quot;important&quot;&amp;gt; &lt;br&gt;  &amp;lt;em&amp;gt;Hello&amp;lt;/em&amp;gt; world! &lt;br&gt;&amp;lt;/p&amp;gt; </description>
+<category>Vim</category>
+<link>null#%5B%5BSurround%20Vim%20Plugin%5D%5D</link>
+<pubDate>Wed, 25 Apr 2012 11:57:39 GMT</pubDate>
+
+</item>
+<item>
+<title>Replace word with buffer in vim</title>
+<description>his method has the advantage of being easily repeatable using the . repeat command.&lt;br&gt;&lt;pre&gt;yiw	 yank inner word (copy word under cursor, say &quot;first&quot;. Same as above).
+...	 Move the cursor to another word (say &quot;second&quot;).
+ciw&amp;lt;C-r&amp;gt;0	 select &quot;second&quot;, then replace it with &quot;first&quot; If you are at the start of the word then cw&amp;lt;C-r&amp;gt;0 is sufficient.
+...	 Move the cursor to another word (say &quot;third&quot;).
+.	 select &quot;third&quot;, then replace it with &quot;first&quot;.
+&lt;/pre&gt;</description>
+<category>Vim</category>
+<link>null#%5B%5BReplace%20word%20with%20buffer%20in%20vim%5D%5D</link>
+<pubDate>Wed, 25 Apr 2012 11:56:03 GMT</pubDate>
+
+</item>
 <item>
 <title>Changing the hostname or computer name in ubuntu</title>
 <description>This is a really simple one, but can cause a lot of weeping and gnashing of teeth. You were given the default &quot;ubuntu&quot; hostname when you installed, and now you want something cooler that enhances your street cred. Heres how to change it:&lt;br&gt;&lt;br&gt;Edit /etc/hostname and change to the new value, you can use nano instead of vi, but remember that real men prefer vi.&lt;br&gt;&lt;pre&gt;vi /etc/hostname
@@ -18,7 +39,7 @@
 &lt;/pre&gt;</description>
 <category>Linux</category>
 <link>null#%5B%5BChanging%20the%20hostname%20or%20computer%20name%20in%20ubuntu%5D%5D</link>
-<pubDate>Wed, 18 Apr 2012 10:31:13 GMT</pubDate>
+<pubDate>Wed, 18 Apr 2012 10:31:00 GMT</pubDate>
 
 </item>
 <item>
@@ -220,25 +241,6 @@ at&amp;gt; &amp;lt;EOT&amp;gt;
 &lt;/pre&gt;</description>
 <category>Bash</category>
 <link>null#%5B%5BDoing%20a%20Diff%20on%20Two%20Directories%5D%5D</link>
-<pubDate>Tue, 20 Mar 2012 09:56:00 GMT</pubDate>
-
-</item>
-<item>
-<title>Find Files modified since</title>
-<description>&lt;pre&gt;find /path -mtime -90
-&lt;/pre&gt;Where 90 is the number of days since Jan 1st.</description>
-<category>Bash</category>
-<link>null#%5B%5BFind%20Files%20modified%20since%5D%5D</link>
-<pubDate>Tue, 20 Mar 2012 09:56:00 GMT</pubDate>
-
-</item>
-<item>
-<title>Making a POST request with curl</title>
-<description>&lt;pre&gt;curl -v -H &quot;Content-Type: application/json&quot; -X POST -d '{&quot;username&quot;:&quot;bob&quot;}' http://localhost:8000/orgs/itv/users
-&lt;/pre&gt;</description>
-<category>Curl</category>
-<category>Bash</category>
-<link>null#%5B%5BMaking%20a%20POST%20request%20with%20curl%5D%5D</link>
 <pubDate>Tue, 20 Mar 2012 09:56:00 GMT</pubDate>
 
 </item>

@@ -1176,6 +1176,16 @@ find . -name '* *' | while read file; do target=`echo &quot;$file&quot; | sed 's
 }}}
 Clients will now get the 'new' master branch when they pull.</pre>
 </div>
+<div title="Replace word with buffer in vim" creator="Toons" modifier="Toons" created="201204251156" tags="Vim" changecount="1">
+<pre>his method has the advantage of being easily repeatable using the . repeat command.
+{{{
+yiw	 yank inner word (copy word under cursor, say &quot;first&quot;. Same as above).
+...	 Move the cursor to another word (say &quot;second&quot;).
+ciw&lt;C-r&gt;0	 select &quot;second&quot;, then replace it with &quot;first&quot; If you are at the start of the word then cw&lt;C-r&gt;0 is sufficient.
+...	 Move the cursor to another word (say &quot;third&quot;).
+.	 select &quot;third&quot;, then replace it with &quot;first&quot;.
+}}}</pre>
+</div>
 <div title="Resetting Sony Ericsson MW600 Bluetooth headset" modifier="Toons" created="201108171038" modified="201108171041" tags="Headphones Sony" server.page.revision="201108171041" server.host="file:///Users/dtownsend/Dropbox/tiddly/index.html" server.type="file">
 <pre>Reset the MW600 headset if it behaves unexpectedly. Resetting the headset removes all information
 about paired devices.
@@ -2085,6 +2095,54 @@ h2 {font-size:16px;}
 h3 {font-size: 14px;}
 /*}}}*/
 </pre>
+</div>
+<div title="Surround Vim Plugin" creator="Toons" modifier="Toons" created="201204251157" tags="Vim" changecount="1">
+<pre>Press cs&quot;' (that's c, s, double quote, single quote) inside 
+
+&quot;Hello world!&quot; 
+
+to change it to 
+
+'Hello world!' 
+
+Now press cs'&lt;q&gt; to change it to 
+
+&lt;q&gt;Hello world!&lt;/q&gt; 
+
+To go full circle, press cst&quot; to get 
+
+&quot;Hello world!&quot; 
+
+To remove the delimiters entirely, press ds&quot; . 
+
+Hello world! 
+
+Now with the cursor on &quot;Hello&quot;, press ysiw] (iw is a text object). 
+
+[Hello] world! 
+
+Let's make that braces and add some space (use &quot;}&quot; instead of &quot;{&quot; for no space): cs]{ 
+
+{ Hello } world! 
+
+Now wrap the entire line in parentheses with yssb or yss) . 
+
+({ Hello } world!) 
+
+Revert to the original text: ds{ds) 
+
+Hello world! 
+
+Emphasize hello: ysiw&lt;em&gt; 
+
+&lt;em&gt;Hello&lt;/em&gt; world! 
+
+Finally, let's try out visual mode. Press a capital V (for linewise visual mode) 
+followed by S&lt;p class=&quot;important&quot;&gt;. 
+
+&lt;p class=&quot;important&quot;&gt; 
+  &lt;em&gt;Hello&lt;/em&gt; world! 
+&lt;/p&gt; </pre>
 </div>
 <div title="Switching Capslock and Escape Key in Mac" modifier="Toons" created="201107201556" server.page.revision="201107201556" server.host="file:///Users/dtownsend/Dropbox/tiddly/index.html" server.type="file">
 <pre>Use PCKeyboardHack (waiting for Lion support)
