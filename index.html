@@ -1701,6 +1701,26 @@ perl -p -i -e&quot;s#param_dict#util_dict#g&quot; `git grep &quot;param_dict&quo
 /\%Vfoo
 }}}</pre>
 </div>
+<div title="Setting Marks and Jumping" creator="Toons" modifier="Toons" created="201205091315" modified="201205091316" tags="Vim" changecount="2">
+<pre>Typing 
+{{{
+'0
+}}}
+ will cause Vim to jump to the 0 mark, which is a &quot;special mark&quot; that represents the last file edited when Vim was exited.
+
+To set a mark, type ma -- this will store the current position in the a mark. Move somewhere else within the file then type 'a to go back. These lowercase marks are remembered as long as the file is in the buffer list. Conversely, the uppercase marks 'A to 'Z include the file name, so they can be used to efficiently jump between points in different files.
+
+There are a lot more special marks, but one that's worth knowing about is 
+{{{
+''.
+}}}
+Typing this will move to the position before the last jump, or where the last mark as created. I find myself using this when I skip somewhere far away in a long file and have forgot to set a mark from where I left off.
+
+To read more about these motion commands, take a look at 
+{{{
+:help mark-motions.
+}}}</pre>
+</div>
 <div title="SiteSubtitle" modifier="toons" created="201106111111" server.page.revision="201106111111" server.host="file:///Users/dtownsend/Dropbox/tiddly/index.html" server.type="file">
 <pre>a place for stuff</pre>
 </div>

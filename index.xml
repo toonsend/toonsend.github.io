@@ -5,16 +5,27 @@
 <description>a place for stuff</description>
 <language>en</language>
 <copyright>Copyright 2012 Toons</copyright>
-<pubDate>Wed, 25 Apr 2012 12:05:35 GMT</pubDate>
-<lastBuildDate>Wed, 25 Apr 2012 12:05:35 GMT</lastBuildDate>
+<pubDate>Wed, 09 May 2012 13:16:39 GMT</pubDate>
+<lastBuildDate>Wed, 09 May 2012 13:16:39 GMT</lastBuildDate>
 <docs>http://blogs.law.harvard.edu/tech/rss</docs>
 <generator>TiddlyWiki 2.6.5</generator>
+<item>
+<title>Setting Marks and Jumping</title>
+<description>Typing &lt;br&gt;&lt;pre&gt;'0
+&lt;/pre&gt; will cause Vim to jump to the 0 mark, which is a &quot;special mark&quot; that represents the last file edited when Vim was exited.&lt;br&gt;&lt;br&gt;To set a mark, type ma &lt;span&gt;—&lt;/span&gt; this will store the current position in the a mark. Move somewhere else within the file then type 'a to go back. These lowercase marks are remembered as long as the file is in the buffer list. Conversely, the uppercase marks 'A to 'Z include the file name, so they can be used to efficiently jump between points in different files.&lt;br&gt;&lt;br&gt;There are a lot more special marks, but one that's worth knowing about is &lt;br&gt;&lt;pre&gt;''.
+&lt;/pre&gt;Typing this will move to the position before the last jump, or where the last mark as created. I find myself using this when I skip somewhere far away in a long file and have forgot to set a mark from where I left off.&lt;br&gt;&lt;br&gt;To read more about these motion commands, take a look at &lt;br&gt;&lt;pre&gt;:help mark-motions.
+&lt;/pre&gt;</description>
+<category>Vim</category>
+<link>null#%5B%5BSetting%20Marks%20and%20Jumping%5D%5D</link>
+<pubDate>Wed, 09 May 2012 13:16:26 GMT</pubDate>
+
+</item>
 <item>
 <title>Surround Vim Plugin</title>
 <description>Press cs&quot;' (that's c, s, double quote, single quote) inside &lt;br&gt;&lt;br&gt;&quot;Hello world!&quot; &lt;br&gt;&lt;br&gt;to change it to &lt;br&gt;&lt;br&gt;'Hello world!' &lt;br&gt;&lt;br&gt;Now press cs'&amp;lt;q&amp;gt; to change it to &lt;br&gt;&lt;br&gt;&amp;lt;q&amp;gt;Hello world!&amp;lt;/q&amp;gt; &lt;br&gt;&lt;br&gt;To go full circle, press cst&quot; to get &lt;br&gt;&lt;br&gt;&quot;Hello world!&quot; &lt;br&gt;&lt;br&gt;To remove the delimiters entirely, press ds&quot; . &lt;br&gt;&lt;br&gt;Hello world! &lt;br&gt;&lt;br&gt;Now with the cursor on &quot;Hello&quot;, press ysiw] (iw is a text object). &lt;br&gt;&lt;br&gt;[Hello] world! &lt;br&gt;&lt;br&gt;Let's make that braces and add some space (use &quot;}&quot; instead of &quot;{&quot; for no space): cs]{ &lt;br&gt;&lt;br&gt;{ Hello } world! &lt;br&gt;&lt;br&gt;Now wrap the entire line in parentheses with yssb or yss) . &lt;br&gt;&lt;br&gt;({ Hello } world!) &lt;br&gt;&lt;br&gt;Revert to the original text: ds{ds) &lt;br&gt;&lt;br&gt;Hello world! &lt;br&gt;&lt;br&gt;Emphasize hello: ysiw&amp;lt;em&amp;gt; &lt;br&gt;&lt;br&gt;&amp;lt;em&amp;gt;Hello&amp;lt;/em&amp;gt; world! &lt;br&gt;&lt;br&gt;Finally, let's try out visual mode. Press a capital V (for linewise visual mode) &lt;br&gt;followed by S&amp;lt;p class=&quot;important&quot;&amp;gt;. &lt;br&gt;&lt;br&gt;&amp;lt;p class=&quot;important&quot;&amp;gt; &lt;br&gt;  &amp;lt;em&amp;gt;Hello&amp;lt;/em&amp;gt; world! &lt;br&gt;&amp;lt;/p&amp;gt; </description>
 <category>Vim</category>
 <link>null#%5B%5BSurround%20Vim%20Plugin%5D%5D</link>
-<pubDate>Wed, 25 Apr 2012 11:57:39 GMT</pubDate>
+<pubDate>Wed, 25 Apr 2012 11:57:00 GMT</pubDate>
 
 </item>
 <item>
@@ -27,7 +38,7 @@ ciw&amp;lt;C-r&amp;gt;0	 select &quot;second&quot;, then replace it with &quot;f
 &lt;/pre&gt;</description>
 <category>Vim</category>
 <link>null#%5B%5BReplace%20word%20with%20buffer%20in%20vim%5D%5D</link>
-<pubDate>Wed, 25 Apr 2012 11:56:03 GMT</pubDate>
+<pubDate>Wed, 25 Apr 2012 11:56:00 GMT</pubDate>
 
 </item>
 <item>
@@ -233,15 +244,6 @@ at&amp;gt; &amp;lt;EOT&amp;gt;
 <category>Bash</category>
 <link>null#%5B%5BParametise%20Xargs%5D%5D</link>
 <pubDate>Tue, 20 Mar 2012 09:57:00 GMT</pubDate>
-
-</item>
-<item>
-<title>Doing a Diff on Two Directories</title>
-<description>&lt;pre&gt;find . -type f -not -exec cmp {} ..//poo2/{} &quot;;&quot; -print
-&lt;/pre&gt;</description>
-<category>Bash</category>
-<link>null#%5B%5BDoing%20a%20Diff%20on%20Two%20Directories%5D%5D</link>
-<pubDate>Tue, 20 Mar 2012 09:56:00 GMT</pubDate>
 
 </item>
 </channel>
