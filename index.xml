@@ -5,10 +5,19 @@
 <description>a place for stuff</description>
 <language>en</language>
 <copyright>Copyright 2012 Toons</copyright>
-<pubDate>Wed, 09 May 2012 13:16:39 GMT</pubDate>
-<lastBuildDate>Wed, 09 May 2012 13:16:39 GMT</lastBuildDate>
+<pubDate>Thu, 10 May 2012 14:22:35 GMT</pubDate>
+<lastBuildDate>Thu, 10 May 2012 14:22:35 GMT</lastBuildDate>
 <docs>http://blogs.law.harvard.edu/tech/rss</docs>
 <generator>TiddlyWiki 2.6.5</generator>
+<item>
+<title>Flushing Your Local Cache</title>
+<description>&lt;pre&gt;dscacheutil -flushcache
+&lt;/pre&gt;</description>
+<category>Mac</category>
+<link>null#%5B%5BFlushing%20Your%20Local%20Cache%5D%5D</link>
+<pubDate>Thu, 10 May 2012 14:22:29 GMT</pubDate>
+
+</item>
 <item>
 <title>Setting Marks and Jumping</title>
 <description>Typing &lt;br&gt;&lt;pre&gt;'0
@@ -17,7 +26,7 @@
 &lt;/pre&gt;</description>
 <category>Vim</category>
 <link>null#%5B%5BSetting%20Marks%20and%20Jumping%5D%5D</link>
-<pubDate>Wed, 09 May 2012 13:16:26 GMT</pubDate>
+<pubDate>Wed, 09 May 2012 13:16:00 GMT</pubDate>
 
 </item>
 <item>
@@ -234,15 +243,6 @@ at&amp;gt; &amp;lt;EOT&amp;gt;
 &lt;/pre&gt;</description>
 <category>Bash</category>
 <link>null#%5B%5BMoving%20Files%20more%20that%205%20days%20old%5D%5D</link>
-<pubDate>Tue, 20 Mar 2012 09:57:00 GMT</pubDate>
-
-</item>
-<item>
-<title>Parametise Xargs</title>
-<description>Use 'I' to mark what you want to call the passed in parameter.&lt;br&gt;&lt;pre&gt;xargs -I {} mv {} old_logs
-&lt;/pre&gt;</description>
-<category>Bash</category>
-<link>null#%5B%5BParametise%20Xargs%5D%5D</link>
 <pubDate>Tue, 20 Mar 2012 09:57:00 GMT</pubDate>
 
 </item>
