@@ -5,17 +5,52 @@
 <description>a place for stuff</description>
 <language>en</language>
 <copyright>Copyright 2012 Toons</copyright>
-<pubDate>Thu, 10 May 2012 14:22:35 GMT</pubDate>
-<lastBuildDate>Thu, 10 May 2012 14:22:35 GMT</lastBuildDate>
+<pubDate>Fri, 01 Jun 2012 13:20:45 GMT</pubDate>
+<lastBuildDate>Fri, 01 Jun 2012 13:20:45 GMT</lastBuildDate>
 <docs>http://blogs.law.harvard.edu/tech/rss</docs>
 <generator>TiddlyWiki 2.6.5</generator>
+<item>
+<title>New Machine Install Software</title>
+<description>&lt;pre&gt;Seashore - The friendly GIMP image editor
+Caffeine - Choose when to not let your computer go to sleep
+Peep Open - Textmate fuzzy find for VIM
+Adium - IM Client
+SizeUp - Window manager
+Notational Velocity - Note taker on steroids
+OpenOffice - If needs must
+Alfred - Application manager
+SequelPro - GUI for mysql
+Propane - Campfire client
+TweetDeck - Getting a bit bloated but a great twitter client
+VLC - The best video player around
+Spotify - Music Player
+SublimeText - Text Editor
+VirtualBox - VM Manager
+UnRarX - Rar rar
+XCode - Needed for mac dev libs
+&lt;/pre&gt;</description>
+<category>Mac</category>
+<link>null#%5B%5BNew%20Machine%20Install%20Software%5D%5D</link>
+<pubDate>Fri, 01 Jun 2012 13:13:00 GMT</pubDate>
+
+</item>
+<item>
+<title>How to Tell What Version of Ubuntu You Are Running</title>
+<description>Telling what version of Ubuntu you are running is extremely easy. You would commonly use this command to figure out if you are running Edgy after you upgraded from Dapper.&lt;br&gt;&lt;br&gt;&lt;pre&gt;cat /etc/issue
+&lt;/pre&gt;</description>
+<category>Ubuntu</category>
+<category>Linux</category>
+<link>null#%5B%5BHow%20to%20Tell%20What%20Version%20of%20Ubuntu%20You%20Are%20Running%5D%5D</link>
+<pubDate>Mon, 28 May 2012 16:29:00 GMT</pubDate>
+
+</item>
 <item>
 <title>Flushing Your Local Cache</title>
 <description>&lt;pre&gt;dscacheutil -flushcache
 &lt;/pre&gt;</description>
 <category>Mac</category>
 <link>null#%5B%5BFlushing%20Your%20Local%20Cache%5D%5D</link>
-<pubDate>Thu, 10 May 2012 14:22:29 GMT</pubDate>
+<pubDate>Thu, 10 May 2012 14:22:00 GMT</pubDate>
 
 </item>
 <item>
@@ -227,23 +262,6 @@ at&amp;gt; &amp;lt;EOT&amp;gt;
 <category>Bash</category>
 <link>null#%5B%5BSearch%20and%20Replace%20Across%20Multiple%20Files%5D%5D</link>
 <pubDate>Tue, 20 Mar 2012 09:59:00 GMT</pubDate>
-
-</item>
-<item>
-<title>Move Empty Files To New Directory</title>
-<description>ls -al | grep -i .log$ | awk '$5==0 {print $8}'  |  xargs -I {} mv {} old_logs/</description>
-<category>Bash</category>
-<link>null#%5B%5BMove%20Empty%20Files%20To%20New%20Directory%5D%5D</link>
-<pubDate>Tue, 20 Mar 2012 09:57:00 GMT</pubDate>
-
-</item>
-<item>
-<title>Moving Files more that 5 days old</title>
-<description>&lt;pre&gt;sudo find ./ -type f -name &quot;mt_requests*.log&quot; -mtime +5 -exec nice gzip -v --fast {} \;
-&lt;/pre&gt;</description>
-<category>Bash</category>
-<link>null#%5B%5BMoving%20Files%20more%20that%205%20days%20old%5D%5D</link>
-<pubDate>Tue, 20 Mar 2012 09:57:00 GMT</pubDate>
 
 </item>
 </channel>
