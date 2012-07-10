@@ -5,10 +5,28 @@
 <description>a place for stuff</description>
 <language>en</language>
 <copyright>Copyright 2012 Toons</copyright>
-<pubDate>Fri, 01 Jun 2012 13:20:45 GMT</pubDate>
-<lastBuildDate>Fri, 01 Jun 2012 13:20:45 GMT</lastBuildDate>
+<pubDate>Tue, 10 Jul 2012 15:40:40 GMT</pubDate>
+<lastBuildDate>Tue, 10 Jul 2012 15:40:40 GMT</lastBuildDate>
 <docs>http://blogs.law.harvard.edu/tech/rss</docs>
 <generator>TiddlyWiki 2.6.5</generator>
+<item>
+<title>Flushing Your Local DNS Cache</title>
+<description>&lt;pre&gt;dscacheutil -flushcache
+&lt;/pre&gt;</description>
+<category>Mac</category>
+<link>null#%5B%5BFlushing%20Your%20Local%20DNS%20Cache%5D%5D</link>
+<pubDate>Tue, 10 Jul 2012 15:40:40 GMT</pubDate>
+
+</item>
+<item>
+<title>Checking External IP of a Box</title>
+<description>&lt;pre&gt;curl http://checkip.dyndns.org
+&lt;/pre&gt;</description>
+<category>Linux</category>
+<link>null#%5B%5BChecking%20External%20IP%20of%20a%20Box%5D%5D</link>
+<pubDate>Tue, 10 Jul 2012 15:39:52 GMT</pubDate>
+
+</item>
 <item>
 <title>New Machine Install Software</title>
 <description>&lt;pre&gt;Seashore - The friendly GIMP image editor
@@ -42,15 +60,6 @@ XCode - Needed for mac dev libs
 <category>Linux</category>
 <link>null#%5B%5BHow%20to%20Tell%20What%20Version%20of%20Ubuntu%20You%20Are%20Running%5D%5D</link>
 <pubDate>Mon, 28 May 2012 16:29:00 GMT</pubDate>
-
-</item>
-<item>
-<title>Flushing Your Local Cache</title>
-<description>&lt;pre&gt;dscacheutil -flushcache
-&lt;/pre&gt;</description>
-<category>Mac</category>
-<link>null#%5B%5BFlushing%20Your%20Local%20Cache%5D%5D</link>
-<pubDate>Thu, 10 May 2012 14:22:00 GMT</pubDate>
 
 </item>
 <item>
@@ -253,15 +262,6 @@ at&amp;gt; &amp;lt;EOT&amp;gt;
 <category>Ngrep</category>
 <link>null#%5B%5BSniff%20a%20Port%20with%20ngrep%5D%5D</link>
 <pubDate>Tue, 20 Mar 2012 10:01:00 GMT</pubDate>
-
-</item>
-<item>
-<title>Search and Replace Across Multiple Files</title>
-<description>&lt;pre&gt;perl -p -i -e&quot;s#param_dict#util_dict#g&quot; `git grep &quot;param_dict&quot; | cut -d: -f1 | sort | uniq`
-&lt;/pre&gt;</description>
-<category>Bash</category>
-<link>null#%5B%5BSearch%20and%20Replace%20Across%20Multiple%20Files%5D%5D</link>
-<pubDate>Tue, 20 Mar 2012 09:59:00 GMT</pubDate>
 
 </item>
 </channel>
