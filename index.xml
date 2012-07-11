@@ -5,17 +5,40 @@
 <description>a place for stuff</description>
 <language>en</language>
 <copyright>Copyright 2012 Toons</copyright>
-<pubDate>Tue, 10 Jul 2012 15:40:40 GMT</pubDate>
-<lastBuildDate>Tue, 10 Jul 2012 15:40:40 GMT</lastBuildDate>
+<pubDate>Wed, 11 Jul 2012 13:54:18 GMT</pubDate>
+<lastBuildDate>Wed, 11 Jul 2012 13:54:18 GMT</lastBuildDate>
 <docs>http://blogs.law.harvard.edu/tech/rss</docs>
 <generator>TiddlyWiki 2.6.5</generator>
+<item>
+<title>Compiling Vim from Source</title>
+<description>Vim build configure options&lt;br&gt;&lt;br&gt;&lt;pre&gt;./configure 
+   --enable-rubyinterp 
+   --prefix=/usr/local/vim/vim73 
+   --with-features=big
+&lt;/pre&gt;</description>
+<category>Vim</category>
+<link>null#%5B%5BCompiling%20Vim%20from%20Source%5D%5D</link>
+<pubDate>Wed, 11 Jul 2012 13:54:02 GMT</pubDate>
+
+</item>
+<item>
+<title>Compiling VIM from Source</title>
+<description>Vim build configure options&lt;br&gt;&lt;pre&gt;/configure --enable-rubyinterp 
+                --prefix=/usr/local/vim/vim73 
+                --with-features=big
+&lt;/pre&gt;</description>
+<category>Vim</category>
+<link>null#%5B%5BCompiling%20VIM%20from%20Source%5D%5D</link>
+<pubDate>Wed, 11 Jul 2012 13:50:00 GMT</pubDate>
+
+</item>
 <item>
 <title>Flushing Your Local DNS Cache</title>
 <description>&lt;pre&gt;dscacheutil -flushcache
 &lt;/pre&gt;</description>
 <category>Mac</category>
 <link>null#%5B%5BFlushing%20Your%20Local%20DNS%20Cache%5D%5D</link>
-<pubDate>Tue, 10 Jul 2012 15:40:40 GMT</pubDate>
+<pubDate>Tue, 10 Jul 2012 15:40:00 GMT</pubDate>
 
 </item>
 <item>
@@ -24,7 +47,7 @@
 &lt;/pre&gt;</description>
 <category>Linux</category>
 <link>null#%5B%5BChecking%20External%20IP%20of%20a%20Box%5D%5D</link>
-<pubDate>Tue, 10 Jul 2012 15:39:52 GMT</pubDate>
+<pubDate>Tue, 10 Jul 2012 15:39:00 GMT</pubDate>
 
 </item>
 <item>
@@ -239,29 +262,6 @@ disown %1 detaches it from your pts
 <category>Bash</category>
 <link>null#%5B%5BUsing%20Tar%5D%5D</link>
 <pubDate>Tue, 20 Mar 2012 10:02:00 GMT</pubDate>
-
-</item>
-<item>
-<title>Using the at command for delayed jobs</title>
-<description>&lt;pre&gt;dtownsend@n-jump:~$ at 9:51
-warning: commands will be executed using /bin/sh
-at&amp;gt; touch delme.txt
-at&amp;gt; &amp;lt;EOT&amp;gt;
-&lt;/pre&gt;Hit Ctrl d&lt;br&gt;&lt;pre&gt;job 2 at Mon Oct 10 09:51:00 2011
-&lt;/pre&gt;</description>
-<category>Bash</category>
-<link>null#%5B%5BUsing%20the%20at%20command%20for%20delayed%20jobs%5D%5D</link>
-<pubDate>Tue, 20 Mar 2012 10:02:00 GMT</pubDate>
-
-</item>
-<item>
-<title>Sniff a Port with ngrep</title>
-<description>&lt;pre&gt;sudo ngrep -d lo port 8000
-&lt;/pre&gt;</description>
-<category>Bash</category>
-<category>Ngrep</category>
-<link>null#%5B%5BSniff%20a%20Port%20with%20ngrep%5D%5D</link>
-<pubDate>Tue, 20 Mar 2012 10:01:00 GMT</pubDate>
 
 </item>
 </channel>

@@ -634,6 +634,24 @@ sudo /etc/init.d/hostname.sh start
 curl http://checkip.dyndns.org
 }}}</pre>
 </div>
+<div title="Compiling VIM from Source" creator="Toons" modifier="Toons" created="201207111350" modified="201207111350" tags="Vim" changecount="2">
+<pre>Vim build configure options
+{{{
+/configure --enable-rubyinterp 
+                --prefix=/usr/local/vim/vim73 
+                --with-features=big
+}}}</pre>
+</div>
+<div title="Compiling Vim from Source" creator="Toons" modifier="Toons" created="201207111353" modified="201207111354" tags="Vim" changecount="4">
+<pre>Vim build configure options
+
+{{{
+./configure 
+   --enable-rubyinterp 
+   --prefix=/usr/local/vim/vim73 
+   --with-features=big
+}}}</pre>
+</div>
 <div title="Creating a Fake Server" modifier="YourName" created="201111222127" tags="Linux" server.page.revision="201111222127" server.host="file:///Users/dtownsend/Dropbox/tiddly/index.html" server.type="file">
 <pre>Netcat is your man
 {{{
