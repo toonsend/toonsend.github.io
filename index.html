@@ -634,14 +634,6 @@ sudo /etc/init.d/hostname.sh start
 curl http://checkip.dyndns.org
 }}}</pre>
 </div>
-<div title="Compiling VIM from Source" creator="Toons" modifier="Toons" created="201207111350" modified="201207111350" tags="Vim" changecount="2">
-<pre>Vim build configure options
-{{{
-/configure --enable-rubyinterp 
-                --prefix=/usr/local/vim/vim73 
-                --with-features=big
-}}}</pre>
-</div>
 <div title="Compiling Vim from Source" creator="Toons" modifier="Toons" created="201207111353" modified="201207111354" tags="Vim" changecount="4">
 <pre>Vim build configure options
 
@@ -2442,6 +2434,54 @@ zE deletes all folds.
 ]z move to end of open fold.
 }}}</pre>
 </div>
+<div title="Vim Grammar" creator="YourName" modifier="YourName" created="201207190108" modified="201207190143" tags="Vim" changecount="4">
+<pre>''COUNT''
+
+number
+
+''VERBS''
+
+yank y
+yank line yy
+delete
+delete line dd
+change c
+change line cc
+insert i
+visual v
+uppercase gU
+lowercase gu
+
+''MODIFIERS''
+
+around a
+inside i
+till t
+find f
+regex /
+backwards regex ?
+
+''NOUNS''
+
+beginning of word b
+word w
+end of word e
+beginning of line $
+end of line ^
+sentence s
+paragraph p
+start of document gg
+end of document G
+
+''IRREGULAR''
+
+D = delete till end of line
+C = change till end of line
+V = visually line
+gUU = uppercase line
+guu = uppercase line
+</pre>
+</div>
 <div title="Vim Sessions" modifier="Toons" created="201107122147" tags="Vim" server.page.revision="201107122147" server.host="file:///Users/dtownsend/Dropbox/tiddly/index.html" server.type="file">
 <pre>Save a vim session
 {{{
@@ -2459,6 +2499,11 @@ Load a vim session
 * f is including the character
 * F is backwards including the character
 * Ctrl N can move down a list of autocomplete suggestions.</pre>
+</div>
+<div title="Vim as a Word Processor" creator="YourName" modifier="YourName" created="201207190106" modified="201207190143" tags="Vim" changecount="3">
+<pre>[[http://www.drbunsen.org/writing-in-vim.html|http://www.drbunsen.org/writing-in-vim.html]]
+
+Vim is a tremendous tool for text manipulation, but it is not configured properly for writing right out of the box. This drawback alone is enough to dissuade some people from ever using Vim.1 This is unfortunate. The idiosyncrasies that make Vim awkward for word processing exist because Vim is principally configured to operate as a code editor. However, with only a few customizations Vim can become a power writing tool. This post is about my experiences with optimizing Vim for writing...</pre>
 </div>
 <div title="ZSH Prompt Variables" modifier="Toons" created="201106151606" modified="201106222055" tags="Linux Zsh" server.page.revision="201106222055" server.host="file:///Users/dtownsend/Dropbox/tiddly/index.html" server.type="file">
 <pre>{{{
