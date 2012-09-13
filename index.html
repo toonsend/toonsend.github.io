@@ -644,6 +644,20 @@ curl http://checkip.dyndns.org
    --with-features=big
 }}}</pre>
 </div>
+<div title="Count the number of lines per minute sent to Logfile." creator="YourName" modifier="YourName" created="201207251044" modified="201207251544" tags="Linux" changecount="7">
+<pre>{{{
+while true; do tail -n0 -f info_log.log&gt;/tmp/tmp.log &amp; sleep 60; 
+kill $! ; wc -l /tmp/tmp.log | cut -c-2; done 2&gt;/dev/null
+}}}
+
+For Falcon
+{{{
+while true; do tail -n0 -f request_log.open 
+| grep 'HTTP Status Code:&quot;200&quot;' 
+&gt;/tmp/tmp.log &amp; sleep 60; kill $! ; wc -l /tmp/tmp.log 
+| cut -c-2; done 2&gt;/dev/null
+}}}</pre>
+</div>
 <div title="Creating a Fake Server" modifier="YourName" created="201111222127" tags="Linux" server.page.revision="201111222127" server.host="file:///Users/dtownsend/Dropbox/tiddly/index.html" server.type="file">
 <pre>Netcat is your man
 {{{
@@ -1245,6 +1259,12 @@ To reset the headset
 * Simultaneously press and hold down POWER and CALL until the headset turns off.
 
 </pre>
+</div>
+<div title="Rolling back a commit if you haven't pushed" creator="Toons" modifier="Toons" created="201209131304" tags="Git" changecount="1">
+<pre>This will not remove the changes but will simply rollback the commit.
+{{{
+git reset --soft HEAD^
+}}}</pre>
 </div>
 <div title="Ruby One Liners" modifier="Toons" created="201112011433" modified="201112011435" tags="Ruby" server.page.revision="201112011435" server.host="file:///Users/dtownsend/Dropbox/tiddly/index.html" server.type="file">
 <pre>''File spacing''

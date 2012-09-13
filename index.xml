@@ -5,10 +5,49 @@
 <description>a place for stuff</description>
 <language>en</language>
 <copyright>Copyright 2012 Toons</copyright>
-<pubDate>Wed, 11 Jul 2012 13:54:18 GMT</pubDate>
-<lastBuildDate>Wed, 11 Jul 2012 13:54:18 GMT</lastBuildDate>
+<pubDate>Thu, 13 Sep 2012 13:04:25 GMT</pubDate>
+<lastBuildDate>Thu, 13 Sep 2012 13:04:25 GMT</lastBuildDate>
 <docs>http://blogs.law.harvard.edu/tech/rss</docs>
 <generator>TiddlyWiki 2.6.5</generator>
+<item>
+<title>Rolling back a commit if you haven't pushed</title>
+<description>This will not remove the changes but will simply rollback the commit.&lt;br&gt;&lt;pre&gt;git reset --soft HEAD^
+&lt;/pre&gt;</description>
+<category>Git</category>
+<link>null#%5B%5BRolling%20back%20a%20commit%20if%20you%20haven't%20pushed%5D%5D</link>
+<pubDate>Thu, 13 Sep 2012 13:04:07 GMT</pubDate>
+
+</item>
+<item>
+<title>Count the number of lines per minute sent to Logfile.</title>
+<description>&lt;pre&gt;while true; do tail -n0 -f info_log.log&amp;gt;/tmp/tmp.log &amp;amp; sleep 60; 
+kill $! ; wc -l /tmp/tmp.log | cut -c-2; done 2&amp;gt;/dev/null
+&lt;/pre&gt;&lt;br&gt;For Falcon&lt;br&gt;&lt;pre&gt;while true; do tail -n0 -f request_log.open 
+| grep 'HTTP Status Code:&quot;200&quot;' 
+&amp;gt;/tmp/tmp.log &amp;amp; sleep 60; kill $! ; wc -l /tmp/tmp.log 
+| cut -c-2; done 2&amp;gt;/dev/null
+&lt;/pre&gt;</description>
+<category>Linux</category>
+<link>null#%5B%5BCount%20the%20number%20of%20lines%20per%20minute%20sent%20to%20Logfile.%5D%5D</link>
+<pubDate>Wed, 25 Jul 2012 15:44:00 GMT</pubDate>
+
+</item>
+<item>
+<title>Vim Grammar</title>
+<description>&lt;strong&gt;COUNT&lt;/strong&gt;&lt;br&gt;&lt;br&gt;number&lt;br&gt;&lt;br&gt;&lt;strong&gt;VERBS&lt;/strong&gt;&lt;br&gt;&lt;br&gt;yank y&lt;br&gt;yank line yy&lt;br&gt;delete&lt;br&gt;delete line dd&lt;br&gt;change c&lt;br&gt;change line cc&lt;br&gt;insert i&lt;br&gt;visual v&lt;br&gt;uppercase gU&lt;br&gt;lowercase gu&lt;br&gt;&lt;br&gt;&lt;strong&gt;MODIFIERS&lt;/strong&gt;&lt;br&gt;&lt;br&gt;around a&lt;br&gt;inside i&lt;br&gt;till t&lt;br&gt;find f&lt;br&gt;regex /&lt;br&gt;backwards regex ?&lt;br&gt;&lt;br&gt;&lt;strong&gt;NOUNS&lt;/strong&gt;&lt;br&gt;&lt;br&gt;beginning of word b&lt;br&gt;word w&lt;br&gt;end of word e&lt;br&gt;beginning of line $&lt;br&gt;end of line ^&lt;br&gt;sentence s&lt;br&gt;paragraph p&lt;br&gt;start of document gg&lt;br&gt;end of document G&lt;br&gt;&lt;br&gt;&lt;strong&gt;IRREGULAR&lt;/strong&gt;&lt;br&gt;&lt;br&gt;D = delete till end of line&lt;br&gt;C = change till end of line&lt;br&gt;V = visually line&lt;br&gt;gUU = uppercase line&lt;br&gt;guu = uppercase line&lt;br&gt;</description>
+<category>Vim</category>
+<link>null#%5B%5BVim%20Grammar%5D%5D</link>
+<pubDate>Thu, 19 Jul 2012 01:43:00 GMT</pubDate>
+
+</item>
+<item>
+<title>Vim as a Word Processor</title>
+<description>&lt;a target=&quot;_blank&quot; title=&quot;External link to http://www.drbunsen.org/writing-in-vim.html&quot; href=&quot;http://www.drbunsen.org/writing-in-vim.html&quot; class=&quot;externalLink&quot;&gt;http://www.drbunsen.org/writing-in-vim.html&lt;/a&gt;&lt;br&gt;&lt;br&gt;Vim is a tremendous tool for text manipulation, but it is not configured properly for writing right out of the box. This drawback alone is enough to dissuade some people from ever using Vim.1 This is unfortunate. The idiosyncrasies that make Vim awkward for word processing exist because Vim is principally configured to operate as a code editor. However, with only a few customizations Vim can become a power writing tool. This post is about my experiences with optimizing Vim for writing...</description>
+<category>Vim</category>
+<link>null#%5B%5BVim%20as%20a%20Word%20Processor%5D%5D</link>
+<pubDate>Thu, 19 Jul 2012 01:43:00 GMT</pubDate>
+
+</item>
 <item>
 <title>Compiling Vim from Source</title>
 <description>Vim build configure options&lt;br&gt;&lt;br&gt;&lt;pre&gt;./configure 
@@ -18,18 +57,7 @@
 &lt;/pre&gt;</description>
 <category>Vim</category>
 <link>null#%5B%5BCompiling%20Vim%20from%20Source%5D%5D</link>
-<pubDate>Wed, 11 Jul 2012 13:54:02 GMT</pubDate>
-
-</item>
-<item>
-<title>Compiling VIM from Source</title>
-<description>Vim build configure options&lt;br&gt;&lt;pre&gt;/configure --enable-rubyinterp 
-                --prefix=/usr/local/vim/vim73 
-                --with-features=big
-&lt;/pre&gt;</description>
-<category>Vim</category>
-<link>null#%5B%5BCompiling%20VIM%20from%20Source%5D%5D</link>
-<pubDate>Wed, 11 Jul 2012 13:50:00 GMT</pubDate>
+<pubDate>Wed, 11 Jul 2012 13:54:00 GMT</pubDate>
 
 </item>
 <item>
@@ -226,42 +254,6 @@ disown %1 detaches it from your pts
 <category>Bash</category>
 <link>null#%5B%5BGet%20all%20the%20listening%20ports%20on%20a%20Mac%5D%5D</link>
 <pubDate>Tue, 20 Mar 2012 10:03:00 GMT</pubDate>
-
-</item>
-<item>
-<title>Tar a directory</title>
-<description>&lt;pre&gt;tar cvzf foo.tgz cps100
-&lt;/pre&gt;will tar the directory cps100 (and its files/subdirectories) into a tar file named foo.tgz. </description>
-<category>Bash</category>
-<link>null#%5B%5BTar%20a%20directory%5D%5D</link>
-<pubDate>Tue, 20 Mar 2012 10:02:00 GMT</pubDate>
-
-</item>
-<item>
-<title>Terminal Changing Text</title>
-<description>Moves the cursor to the start of a line&lt;br&gt;&lt;pre&gt;ctrl+a or Home
-&lt;/pre&gt;&lt;br&gt;Moves the cursor to the end of a line.&lt;br&gt;&lt;pre&gt;ctrl+e or End
-&lt;/pre&gt;&lt;br&gt;Moves to the beginning of the previous or current word.&lt;br&gt;&lt;pre&gt;ctrl+b
-&lt;/pre&gt;&lt;br&gt;Deletes from the current cursor position to the end of the line.&lt;br&gt;&lt;pre&gt;ctrl+k
-&lt;/pre&gt;&lt;br&gt;Deletes the whole of the current line.&lt;br&gt;&lt;pre&gt;ctrl+u
-&lt;/pre&gt;&lt;br&gt;Deletes the word before the cursor.&lt;br&gt;&lt;pre&gt;ctrl+w
-&lt;/pre&gt;</description>
-<category>Bash</category>
-<link>null#%5B%5BTerminal%20Changing%20Text%5D%5D</link>
-<pubDate>Tue, 20 Mar 2012 10:02:00 GMT</pubDate>
-
-</item>
-<item>
-<title>Using Tar</title>
-<description>To tar all .cc and .h files into a tar file named foo.tgz use:&lt;br&gt;&lt;pre&gt;    tar cvzf foo.tgz *.cc *.h
-&lt;/pre&gt;This creates (c) a compressed (z) tar file named foo.tgz (f) and shows the files being stored into the tar file (v). The .tgz suffix is a convention for gzipped tar files, it's useful to use the convention since you'll know to use z to restore/extract.&lt;br&gt;&lt;br&gt;It's often more useful to tar a directory (which tars all files and subdirectories recursively unless you specify otherwise). The nice part about tarring a directory is that it is untarred as a directory rather than as individual files.&lt;br&gt;&lt;br&gt;&lt;pre&gt;   tar cvzf foo.tgz cps100
-&lt;/pre&gt;will tar the directory cps100 (and its files/subdirectories) into a tar file named foo.tgz.&lt;br&gt;&lt;br&gt;To see a tar file's table of contents use:&lt;br&gt;&lt;pre&gt;   tar tzf foo.tgz
-&lt;/pre&gt;&lt;br&gt;To extract the contents of a tar file use:&lt;br&gt;&lt;pre&gt;    tar xvzf foo.tgz
-&lt;/pre&gt;</description>
-<category>Tar</category>
-<category>Bash</category>
-<link>null#%5B%5BUsing%20Tar%5D%5D</link>
-<pubDate>Tue, 20 Mar 2012 10:02:00 GMT</pubDate>
 
 </item>
 </channel>
