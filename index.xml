@@ -5,17 +5,27 @@
 <description>a place for stuff</description>
 <language>en</language>
 <copyright>Copyright 2012 Toons</copyright>
-<pubDate>Thu, 13 Sep 2012 13:04:25 GMT</pubDate>
-<lastBuildDate>Thu, 13 Sep 2012 13:04:25 GMT</lastBuildDate>
+<pubDate>Mon, 22 Oct 2012 16:36:48 GMT</pubDate>
+<lastBuildDate>Mon, 22 Oct 2012 16:36:48 GMT</lastBuildDate>
 <docs>http://blogs.law.harvard.edu/tech/rss</docs>
 <generator>TiddlyWiki 2.6.5</generator>
+<item>
+<title>Pushing and Popping a Directory</title>
+<description>&lt;pre&gt;pushd /
+&lt;/pre&gt;&lt;br&gt;Change to / and push current directory on to stack.&lt;br&gt;&lt;br&gt;&lt;pre&gt;popd
+&lt;/pre&gt;&lt;br&gt;Return to original directory</description>
+<category>Linux</category>
+<link>null#%5B%5BPushing%20and%20Popping%20a%20Directory%5D%5D</link>
+<pubDate>Mon, 22 Oct 2012 16:33:48 GMT</pubDate>
+
+</item>
 <item>
 <title>Rolling back a commit if you haven't pushed</title>
 <description>This will not remove the changes but will simply rollback the commit.&lt;br&gt;&lt;pre&gt;git reset --soft HEAD^
 &lt;/pre&gt;</description>
 <category>Git</category>
 <link>null#%5B%5BRolling%20back%20a%20commit%20if%20you%20haven't%20pushed%5D%5D</link>
-<pubDate>Thu, 13 Sep 2012 13:04:07 GMT</pubDate>
+<pubDate>Thu, 13 Sep 2012 13:04:00 GMT</pubDate>
 
 </item>
 <item>
@@ -244,16 +254,6 @@ disown %1 detaches it from your pts
 <category>Bash</category>
 <link>null#%5B%5BRemoving%20spaces%20from%20filenames%20-%20renaming%20files%5D%5D</link>
 <pubDate>Tue, 20 Mar 2012 10:12:00 GMT</pubDate>
-
-</item>
-<item>
-<title>Get all the listening ports on a Mac</title>
-<description>&lt;pre&gt;netstat -at | grep -i &quot;listen&quot;
-&lt;/pre&gt;</description>
-<category>Mac</category>
-<category>Bash</category>
-<link>null#%5B%5BGet%20all%20the%20listening%20ports%20on%20a%20Mac%5D%5D</link>
-<pubDate>Tue, 20 Mar 2012 10:03:00 GMT</pubDate>
 
 </item>
 </channel>
