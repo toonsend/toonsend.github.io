@@ -846,6 +846,42 @@ netstat -at | grep -i &quot;listen&quot;
 
 </pre>
 </div>
+<div title="HaProxy Log Format" creator="Toons" modifier="Toons" created="201210301120" tags="ToTidy" changecount="1">
+<pre>from http://code.google.com/p/haproxy-docs/wiki/HTTPLogFormat
+
+Example
+frontend http-in
+    mode http
+    option httplog
+    log global
+    default_backend bck
+
+backend static
+    server srv1 127.0.0.1:8000
+
+&gt;&gt;&gt; Feb  6 12:14:14 localhost \
+      haproxy[14389]: 10.0.1.2:33317 [06/Feb/2009:12:14:14.655] http-in \
+      static/srv1 10/0/30/69/109 200 2750 - - ---- 1/1/1/1/0 0/0 {1wt.eu} \
+      {} &quot;GET /index.html HTTP/1.1&quot;
+Field	 Format	 Extract from the example above
+1	process_name '[' pid ']:'	haproxy[14389]:
+2	client_ip ':' client_port	10.0.1.2:33317
+3	'[' accept_date ']'	[06/Feb/2009:12:14:14.655]
+4	frontend_name	http-in
+5	backend_name '/' server_name	static/srv1
+6	Tq '/' Tw '/' Tc '/' Tr '/' Tt*	10/0/30/69/109
+7	status_code	200
+8	bytes_read*	2750
+9	captured_request_cookie	-
+10	captured_response_cookie	-
+11	termination_state	----
+12	actconn '/' feconn '/' beconn '/' srv_conn '/' retries*	1/1/1/1/0
+13	srv_queue '/' backend_queue	0/0
+14	'{' captured_request_headers* '}'	{haproxy.1wt.eu}
+15	'{' captured_response_headers* '}'	{}
+16	'&quot;' http_request '&quot;'	&quot;GET /index.html HTTP/1.1&quot;
+</pre>
+</div>
 <div title="HaemoSideBarOptions" modifier="TiddlyThemes" created="200701130013" modified="200708091512" tags="HaemoglobinTheme" server.page.revision="200708091512" server.host="file:///Users/dtownsend/Dropbox/tiddly/index.html" server.type="file">
 <pre>&lt;&lt;closeAll&gt;&gt;&lt;&lt;permaview&gt;&gt;&lt;&lt;newTiddler&gt;&gt;&lt;&lt;newJournal 'DD MMM YYYY'&gt;&gt;&lt;&lt;saveChanges&gt;&gt;&lt;&lt;slider chkSliderOptionsPanel OptionsPanel 'options »' 'Change TiddlyWiki advanced options'&gt;&gt;</pre>
 </div>
@@ -1162,6 +1198,12 @@ endif
 <pre>Use 'I' to mark what you want to call the passed in parameter.
 {{{
 xargs -I {} mv {} old_logs
+}}}</pre>
+</div>
+<div title="Parsing HaProxy Logs for 500 errors" creator="Toons" modifier="Toons" created="201210301118" tags="Bash" changecount="1">
+<pre>{{{
+cat messages | awk '$13==&quot;504&quot; { split($3,hr,&quot;:&quot;); print $1,$2,hr[1]}'
+ | uniq -c
 }}}</pre>
 </div>
 <div title="Pushing and Popping a Directory" creator="Toons" modifier="Toons" created="201210221633" tags="Linux" changecount="1">

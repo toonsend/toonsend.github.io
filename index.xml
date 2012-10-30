@@ -5,10 +5,28 @@
 <description>a place for stuff</description>
 <language>en</language>
 <copyright>Copyright 2012 Toons</copyright>
-<pubDate>Mon, 22 Oct 2012 16:36:48 GMT</pubDate>
-<lastBuildDate>Mon, 22 Oct 2012 16:36:48 GMT</lastBuildDate>
+<pubDate>Tue, 30 Oct 2012 13:25:14 GMT</pubDate>
+<lastBuildDate>Tue, 30 Oct 2012 13:25:14 GMT</lastBuildDate>
 <docs>http://blogs.law.harvard.edu/tech/rss</docs>
 <generator>TiddlyWiki 2.6.5</generator>
+<item>
+<title>HaProxy Log Format</title>
+<description>from &lt;a target=&quot;_blank&quot; title=&quot;External link to http://code.google.com/p/haproxy-docs/wiki/HTTPLogFormat&quot; href=&quot;http://code.google.com/p/haproxy-docs/wiki/HTTPLogFormat&quot; class=&quot;externalLink&quot;&gt;http://code.google.com/p/haproxy-docs/wiki/HTTPLogFormat&lt;/a&gt;&lt;br&gt;&lt;br&gt;Example&lt;br&gt;frontend http-in&lt;br&gt;    mode http&lt;br&gt;    option httplog&lt;br&gt;    log global&lt;br&gt;    default_backend bck&lt;br&gt;&lt;br&gt;backend static&lt;br&gt;    server srv1 127.0.0.1:8000&lt;br&gt;&lt;br&gt;&lt;blockquote&gt;&lt;blockquote&gt;&lt;blockquote&gt; Feb  6 12:14:14 localhost \&lt;br&gt;&lt;/blockquote&gt;&lt;/blockquote&gt;&lt;/blockquote&gt;      haproxy[14389]: 10.0.1.2:33317 [06/Feb/2009:12:14:14.655] http-in \&lt;br&gt;      static/srv1 10/0/30/69/109 200 2750 - - &lt;strike&gt;&lt;/strike&gt; 1/1/1/1/0 0/0 {1wt.eu} \&lt;br&gt;      {} &quot;GET /index.html HTTP/1.1&quot;&lt;br&gt;Field	 Format	 Extract from the example above&lt;br&gt;1	process_name '[' pid ']:'	haproxy[14389]:&lt;br&gt;2	client_ip ':' client_port	10.0.1.2:33317&lt;br&gt;3	'[' accept_date ']'	[06/Feb/2009:12:14:14.655]&lt;br&gt;4	frontend_name	http-in&lt;br&gt;5	backend_name '/' server_name	static/srv1&lt;br&gt;6	Tq '/' Tw '/' Tc '/' Tr '/' Tt*	10/0/30/69/109&lt;br&gt;7	status_code	200&lt;br&gt;8	bytes_read*	2750&lt;br&gt;9	captured_request_cookie	-&lt;br&gt;10	captured_response_cookie	-&lt;br&gt;11	termination_state	&lt;strike&gt;&lt;/strike&gt;&lt;br&gt;12	actconn '/' feconn '/' beconn '/' srv_conn '/' retries*	1/1/1/1/0&lt;br&gt;13	srv_queue '/' backend_queue	0/0&lt;br&gt;14	'{' captured_request_headers* '}'	{haproxy.1wt.eu}&lt;br&gt;15	'{' captured_response_headers* '}'	{}&lt;br&gt;16	'&quot;' http_request '&quot;'	&quot;GET /index.html HTTP/1.1&quot;&lt;br&gt;</description>
+<category>ToTidy</category>
+<link>null#%5B%5BHaProxy%20Log%20Format%5D%5D</link>
+<pubDate>Tue, 30 Oct 2012 11:20:00 GMT</pubDate>
+
+</item>
+<item>
+<title>Parsing HaProxy Logs for 500 errors</title>
+<description>&lt;pre&gt;cat messages | awk '$13==&quot;504&quot; { split($3,hr,&quot;:&quot;); print $1,$2,hr[1]}'
+ | uniq -c
+&lt;/pre&gt;</description>
+<category>Bash</category>
+<link>null#%5B%5BParsing%20HaProxy%20Logs%20for%20500%20errors%5D%5D</link>
+<pubDate>Tue, 30 Oct 2012 11:18:00 GMT</pubDate>
+
+</item>
 <item>
 <title>Pushing and Popping a Directory</title>
 <description>&lt;pre&gt;pushd /
@@ -16,7 +34,7 @@
 &lt;/pre&gt;&lt;br&gt;Return to original directory</description>
 <category>Linux</category>
 <link>null#%5B%5BPushing%20and%20Popping%20a%20Directory%5D%5D</link>
-<pubDate>Mon, 22 Oct 2012 16:33:48 GMT</pubDate>
+<pubDate>Mon, 22 Oct 2012 16:33:00 GMT</pubDate>
 
 </item>
 <item>
@@ -237,23 +255,6 @@ disown %1 detaches it from your pts
 <category>bash</category>
 <link>null#%5B%5BForgetting%20to%20run%20screen%5D%5D</link>
 <pubDate>Thu, 22 Mar 2012 09:14:00 GMT</pubDate>
-
-</item>
-<item>
-<title>How to fix the backspace key in screen</title>
-<description>&lt;pre&gt;alias screen='TERM=screen screen'
-&lt;/pre&gt;</description>
-<link>null#%5B%5BHow%20to%20fix%20the%20backspace%20key%20in%20screen%5D%5D</link>
-<pubDate>Tue, 20 Mar 2012 10:31:00 GMT</pubDate>
-
-</item>
-<item>
-<title>Removing spaces from filenames - renaming files</title>
-<description>&lt;pre&gt;find . -name '* *' | while read file; do target=`echo &quot;$file&quot; | sed 's/ /_/g'`; echo &quot;Renaming '$file' to '$target'&quot;; mv &quot;$file&quot; &quot;$target&quot;; done;
-&lt;/pre&gt;</description>
-<category>Bash</category>
-<link>null#%5B%5BRemoving%20spaces%20from%20filenames%20-%20renaming%20files%5D%5D</link>
-<pubDate>Tue, 20 Mar 2012 10:12:00 GMT</pubDate>
 
 </item>
 </channel>
