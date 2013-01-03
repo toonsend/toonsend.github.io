@@ -4,11 +4,20 @@
 <title>ToonsWiki</title>
 <description>a place for stuff</description>
 <language>en</language>
-<copyright>Copyright 2012 Toons</copyright>
-<pubDate>Tue, 30 Oct 2012 13:25:14 GMT</pubDate>
-<lastBuildDate>Tue, 30 Oct 2012 13:25:14 GMT</lastBuildDate>
+<copyright>Copyright 2013 Toons</copyright>
+<pubDate>Thu, 03 Jan 2013 15:13:20 GMT</pubDate>
+<lastBuildDate>Thu, 03 Jan 2013 15:13:20 GMT</lastBuildDate>
 <docs>http://blogs.law.harvard.edu/tech/rss</docs>
 <generator>TiddlyWiki 2.6.5</generator>
+<item>
+<title>Who was last on the box</title>
+<description>Find out who was last on the box, sometimes provide other info, such as restarts.&lt;br&gt;&lt;br&gt;&lt;pre&gt;last -f /var/log/wtmp
+&lt;/pre&gt;</description>
+<category>Ubuntu</category>
+<link>null#%5B%5BWho%20was%20last%20on%20the%20box%5D%5D</link>
+<pubDate>Thu, 03 Jan 2013 15:13:11 GMT</pubDate>
+
+</item>
 <item>
 <title>HaProxy Log Format</title>
 <description>from &lt;a target=&quot;_blank&quot; title=&quot;External link to http://code.google.com/p/haproxy-docs/wiki/HTTPLogFormat&quot; href=&quot;http://code.google.com/p/haproxy-docs/wiki/HTTPLogFormat&quot; class=&quot;externalLink&quot;&gt;http://code.google.com/p/haproxy-docs/wiki/HTTPLogFormat&lt;/a&gt;&lt;br&gt;&lt;br&gt;Example&lt;br&gt;frontend http-in&lt;br&gt;    mode http&lt;br&gt;    option httplog&lt;br&gt;    log global&lt;br&gt;    default_backend bck&lt;br&gt;&lt;br&gt;backend static&lt;br&gt;    server srv1 127.0.0.1:8000&lt;br&gt;&lt;br&gt;&lt;blockquote&gt;&lt;blockquote&gt;&lt;blockquote&gt; Feb  6 12:14:14 localhost \&lt;br&gt;&lt;/blockquote&gt;&lt;/blockquote&gt;&lt;/blockquote&gt;      haproxy[14389]: 10.0.1.2:33317 [06/Feb/2009:12:14:14.655] http-in \&lt;br&gt;      static/srv1 10/0/30/69/109 200 2750 - - &lt;strike&gt;&lt;/strike&gt; 1/1/1/1/0 0/0 {1wt.eu} \&lt;br&gt;      {} &quot;GET /index.html HTTP/1.1&quot;&lt;br&gt;Field	 Format	 Extract from the example above&lt;br&gt;1	process_name '[' pid ']:'	haproxy[14389]:&lt;br&gt;2	client_ip ':' client_port	10.0.1.2:33317&lt;br&gt;3	'[' accept_date ']'	[06/Feb/2009:12:14:14.655]&lt;br&gt;4	frontend_name	http-in&lt;br&gt;5	backend_name '/' server_name	static/srv1&lt;br&gt;6	Tq '/' Tw '/' Tc '/' Tr '/' Tt*	10/0/30/69/109&lt;br&gt;7	status_code	200&lt;br&gt;8	bytes_read*	2750&lt;br&gt;9	captured_request_cookie	-&lt;br&gt;10	captured_response_cookie	-&lt;br&gt;11	termination_state	&lt;strike&gt;&lt;/strike&gt;&lt;br&gt;12	actconn '/' feconn '/' beconn '/' srv_conn '/' retries*	1/1/1/1/0&lt;br&gt;13	srv_queue '/' backend_queue	0/0&lt;br&gt;14	'{' captured_request_headers* '}'	{haproxy.1wt.eu}&lt;br&gt;15	'{' captured_response_headers* '}'	{}&lt;br&gt;16	'&quot;' http_request '&quot;'	&quot;GET /index.html HTTP/1.1&quot;&lt;br&gt;</description>
@@ -244,17 +253,6 @@ mysql&amp;gt; CREATE USER 'dummy'@'localhost';
 &lt;/pre&gt;</description>
 <link>null#%5B%5BCreating%20a%20new%20MySql%20User.%5D%5D</link>
 <pubDate>Wed, 04 Apr 2012 14:20:00 GMT</pubDate>
-
-</item>
-<item>
-<title>Forgetting to run screen</title>
-<description>So I'm in a friend's house and I've been doing some compwinner work when I realised there is no way this alter table is going to finish before I go home and I forgot to run screen. A conversation with Toons came in to my head and I suddenly remembered something. &lt;br&gt;If you do make this mistake you can get around it as follows&lt;br&gt;&lt;pre&gt;CTRL-z   suspends your current process
-bg backgrounds it
-disown %1 detaches it from your pts
-&lt;/pre&gt;&lt;br&gt;hey presto you now can go shut the terminal, go away and it'll keep running in the background. :)&lt;br&gt;Obviously unlike in screen, you can't get it back, but at least you haven't wasted 4 hours&lt;br&gt;&lt;br&gt;DMC</description>
-<category>bash</category>
-<link>null#%5B%5BForgetting%20to%20run%20screen%5D%5D</link>
-<pubDate>Thu, 22 Mar 2012 09:14:00 GMT</pubDate>
 
 </item>
 </channel>
