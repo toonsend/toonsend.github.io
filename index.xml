@@ -5,17 +5,25 @@
 <description>a place for stuff</description>
 <language>en</language>
 <copyright>Copyright 2013 Toons</copyright>
-<pubDate>Thu, 03 Jan 2013 15:13:20 GMT</pubDate>
-<lastBuildDate>Thu, 03 Jan 2013 15:13:20 GMT</lastBuildDate>
+<pubDate>Tue, 22 Jan 2013 11:43:35 GMT</pubDate>
+<lastBuildDate>Tue, 22 Jan 2013 11:43:35 GMT</lastBuildDate>
 <docs>http://blogs.law.harvard.edu/tech/rss</docs>
 <generator>TiddlyWiki 2.6.5</generator>
+<item>
+<title>How to remove an entry from Chrome's Remembered URLs</title>
+<description>For Chrome on Mac OS X.&lt;br&gt;&lt;br&gt;Start typing URL you want to remove.&lt;br&gt;User keyboard arrows to move selection to full URL.&lt;br&gt;Press Fn + Shift + Del</description>
+<category>Chrome</category>
+<link>null#%5B%5BHow%20to%20remove%20an%20entry%20from%20Chrome's%20Remembered%20URLs%5D%5D</link>
+<pubDate>Tue, 22 Jan 2013 11:43:34 GMT</pubDate>
+
+</item>
 <item>
 <title>Who was last on the box</title>
 <description>Find out who was last on the box, sometimes provide other info, such as restarts.&lt;br&gt;&lt;br&gt;&lt;pre&gt;last -f /var/log/wtmp
 &lt;/pre&gt;</description>
 <category>Ubuntu</category>
 <link>null#%5B%5BWho%20was%20last%20on%20the%20box%5D%5D</link>
-<pubDate>Thu, 03 Jan 2013 15:13:11 GMT</pubDate>
+<pubDate>Thu, 03 Jan 2013 15:13:00 GMT</pubDate>
 
 </item>
 <item>
@@ -237,22 +245,6 @@ ciw&amp;lt;C-r&amp;gt;0	 select &quot;second&quot;, then replace it with &quot;f
 <description>Tmux is becoming pretty popular as of late, but as with any new technology, there are skeptics. I’m here to quell some rumors and outline how to start using Tmux effectively.&lt;br&gt;&lt;br&gt;Out of all the questions I get, the most common is, “Does copying and pasting work in Tmux? I heard it wasn’t possible.” Forget that noise; copying and pasting works wonderfully with a couple of extra steps.&lt;br&gt;&lt;br&gt;&lt;a target=&quot;_blank&quot; title=&quot;External link to http://robots.thoughtbot.com/post/19398560514/how-to-copy-and-paste-with-tmux-on-mac-os-x&quot; href=&quot;http://robots.thoughtbot.com/post/19398560514/how-to-copy-and-paste-with-tmux-on-mac-os-x&quot; class=&quot;externalLink&quot;&gt;http://robots.thoughtbot.com/post/19398560514/how-to-copy-and-paste-with-tmux-on-mac-os-x&lt;/a&gt;</description>
 <link>null#%5B%5BFixing%20Tmux%20Cut%20and%20Paste%5D%5D</link>
 <pubDate>Sat, 07 Apr 2012 05:14:00 GMT</pubDate>
-
-</item>
-<item>
-<title>Creating a new MySql User.</title>
-<description>&lt;pre&gt;mysql&amp;gt; CREATE USER 'monty'@'localhost' IDENTIFIED BY 'some_pass';
-mysql&amp;gt; GRANT ALL PRIVILEGES ON *.* TO 'monty'@'localhost'
-    -&amp;gt;     WITH GRANT OPTION;
-mysql&amp;gt; CREATE USER 'monty'@'%' IDENTIFIED BY 'some_pass';
-mysql&amp;gt; GRANT ALL PRIVILEGES ON *.* TO 'monty'@'%'
-    -&amp;gt;     WITH GRANT OPTION;
-mysql&amp;gt; CREATE USER 'admin'@'localhost';
-mysql&amp;gt; GRANT RELOAD,PROCESS ON *.* TO 'admin'@'localhost';
-mysql&amp;gt; CREATE USER 'dummy'@'localhost';
-&lt;/pre&gt;</description>
-<link>null#%5B%5BCreating%20a%20new%20MySql%20User.%5D%5D</link>
-<pubDate>Wed, 04 Apr 2012 14:20:00 GMT</pubDate>
 
 </item>
 </channel>
