@@ -5,16 +5,63 @@
 <description>a place for stuff</description>
 <language>en</language>
 <copyright>Copyright 2013 Toons</copyright>
-<pubDate>Tue, 22 Jan 2013 11:43:35 GMT</pubDate>
-<lastBuildDate>Tue, 22 Jan 2013 11:43:35 GMT</lastBuildDate>
+<pubDate>Fri, 01 Mar 2013 16:17:36 GMT</pubDate>
+<lastBuildDate>Fri, 01 Mar 2013 16:17:36 GMT</lastBuildDate>
 <docs>http://blogs.law.harvard.edu/tech/rss</docs>
 <generator>TiddlyWiki 2.6.5</generator>
+<item>
+<title>Using openssl to extract private key ( .pem file) from .pfx (Personal Information Exchange)</title>
+<description>PFX : PFX defines a file format commonly used to store private with accompanying public key certificates, protected with a password-based symmetric key (standard-&lt;a tiddlylink=&quot;PKCS12&quot; refresh=&quot;link&quot; target=&quot;_blank&quot; title=&quot;External link to null#PKCS12&quot; href=&quot;null#PKCS12&quot; class=&quot;externalLink null&quot;&gt;PKCS12&lt;/a&gt;).&lt;br&gt;&lt;br&gt;PEM : Openssl usages PEM (Privacy Enhanced Mail Certificate) to store the private key.&lt;br&gt;&lt;br&gt;If you want to extract private key from a pfx file and write it to PEM file&lt;br&gt;&lt;code&gt; 
+openssl.exe pkcs12 -in publicAndprivate.pfx -nocerts -out privateKey.pem
+&lt;/code&gt;&lt;br&gt;&lt;br&gt;If you want to extract the certificate file (the signed public key) from the pfx file&lt;br&gt;&lt;pre&gt;openssl.exe pkcs12 -in publicAndprivate.pfx -clcerts -nokeys -out publicCert.pem
+&lt;/pre&gt;&lt;br&gt;To remove the password from the private key file.&lt;br&gt;&lt;pre&gt;openssl.exe rsa -in privateKey.pem -out private.pem
+&lt;/pre&gt;&lt;br&gt;This is required as, at the time of exporting privateKey, you have added a password to the private key to secure it. If you left the password with it, it will keep asking the password as any application tries to access it.</description>
+<category>ssl</category>
+<link>null#%5B%5BUsing%20openssl%20to%20extract%20private%20key%20(%20.pem%20file)%20from%20.pfx%20(Personal%20Information%20Exchange)%5D%5D</link>
+<pubDate>Fri, 01 Mar 2013 16:17:28 GMT</pubDate>
+
+</item>
+<item>
+<title>Add User to Box Script</title>
+<description>&lt;pre&gt;#!/bin/bash
+
+if [ &quot;$1&quot; == &quot;&quot; ]
+then
+        echo -n 'Username? '
+        read INNAME
+fi
+
+sudo -v
+
+echo sudo -v
+echo sudo groupadd **GROUP**
+echo sudo groupadd **GROUP**
+
+for loop in $INNAME $*
+do
+        sudo true
+        NAME=$loop
+        echo sudo groupadd $NAME
+        echo &quot;sudo useradd -g $NAME -G admin,**GROUP**,**GROUP** -d /home/$NAME -s /bin/bash -m -p '' $NAME&quot;
+        echo sudo mkdir /home/$NAME/.ssh
+        echo &quot;cat &amp;lt;&amp;lt; HERE | sudo tee -a /home/$NAME/.ssh/authorized_keys&quot;
+        sudo cat /home/$NAME/.ssh/authorized_keys
+        echo HERE
+        echo sudo chown -R $NAME:$NAME /home/$NAME/.ssh
+        echo sudo chmod -R 700 /home/$NAME/.ssh
+done
+&lt;/pre&gt;</description>
+<category>Linux</category>
+<link>null#%5B%5BAdd%20User%20to%20Box%20Script%5D%5D</link>
+<pubDate>Fri, 25 Jan 2013 11:50:00 GMT</pubDate>
+
+</item>
 <item>
 <title>How to remove an entry from Chrome's Remembered URLs</title>
 <description>For Chrome on Mac OS X.&lt;br&gt;&lt;br&gt;Start typing URL you want to remove.&lt;br&gt;User keyboard arrows to move selection to full URL.&lt;br&gt;Press Fn + Shift + Del</description>
 <category>Chrome</category>
 <link>null#%5B%5BHow%20to%20remove%20an%20entry%20from%20Chrome's%20Remembered%20URLs%5D%5D</link>
-<pubDate>Tue, 22 Jan 2013 11:43:34 GMT</pubDate>
+<pubDate>Tue, 22 Jan 2013 11:43:00 GMT</pubDate>
 
 </item>
 <item>
@@ -200,51 +247,6 @@ ciw&amp;lt;C-r&amp;gt;0	 select &quot;second&quot;, then replace it with &quot;f
 <category>Linux</category>
 <link>null#%5B%5BChanging%20the%20hostname%20or%20computer%20name%20in%20ubuntu%5D%5D</link>
 <pubDate>Wed, 18 Apr 2012 10:31:00 GMT</pubDate>
-
-</item>
-<item>
-<title>Date Format In Ruby</title>
-<description>Format meaning &lt;br&gt;&lt;br&gt;&lt;pre&gt;  %a - The abbreviated weekday name (``Sun'')
-  %A - The  full  weekday  name (``Sunday'')
-  %b - The abbreviated month name (``Jan'')
-  %B - The  full  month  name (``January'')
-  %c - The preferred local date and time representation
-  %d - Day of the month (01..31)
-  %H - Hour of the day, 24-hour clock (00..23)
-  %I - Hour of the day, 12-hour clock (01..12)
-  %j - Day of the year (001..366)
-  %m - Month of the year (01..12)
-  %M - Minute of the hour (00..59)
-  %p - Meridian indicator (``AM''  or  ``PM'')
-  %S - Second of the minute (00..60)
-  %U - Week  number  of the current year,
-          starting with the first Sunday as the first
-          day of the first week (00..53)
-  %W - Week  number  of the current year,
-          starting with the first Monday as the first
-          day of the first week (00..53)
-  %w - Day of the week (Sunday is 0, 0..6)
-  %x - Preferred representation for the date alone, no time
-  %X - Preferred representation for the time alone, no date
-  %y - Year without a century (00..99)
-  %Y - Year with century
-  %Z - Time zone name
-  %% - Literal ``%'' character
-
-   t = Time.now
-   t.strftime(&quot;Printed on %m/%d/%Y&quot;)   #=&amp;gt; &quot;Printed on 04/09/2003&quot;
-   t.strftime(&quot;at %I:%M%p&quot;)            #=&amp;gt; &quot;at 08:56AM&quot;
-&lt;/pre&gt;</description>
-<category>Ruby</category>
-<link>null#%5B%5BDate%20Format%20In%20Ruby%5D%5D</link>
-<pubDate>Thu, 12 Apr 2012 19:03:00 GMT</pubDate>
-
-</item>
-<item>
-<title>Fixing Tmux Cut and Paste</title>
-<description>Tmux is becoming pretty popular as of late, but as with any new technology, there are skeptics. I’m here to quell some rumors and outline how to start using Tmux effectively.&lt;br&gt;&lt;br&gt;Out of all the questions I get, the most common is, “Does copying and pasting work in Tmux? I heard it wasn’t possible.” Forget that noise; copying and pasting works wonderfully with a couple of extra steps.&lt;br&gt;&lt;br&gt;&lt;a target=&quot;_blank&quot; title=&quot;External link to http://robots.thoughtbot.com/post/19398560514/how-to-copy-and-paste-with-tmux-on-mac-os-x&quot; href=&quot;http://robots.thoughtbot.com/post/19398560514/how-to-copy-and-paste-with-tmux-on-mac-os-x&quot; class=&quot;externalLink&quot;&gt;http://robots.thoughtbot.com/post/19398560514/how-to-copy-and-paste-with-tmux-on-mac-os-x&lt;/a&gt;</description>
-<link>null#%5B%5BFixing%20Tmux%20Cut%20and%20Paste%5D%5D</link>
-<pubDate>Sat, 07 Apr 2012 05:14:00 GMT</pubDate>
 
 </item>
 </channel>
