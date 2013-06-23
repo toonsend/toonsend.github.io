@@ -601,6 +601,18 @@ SMS Backup</pre>
 <div title="Autorename on Tmux" modifier="Toons" created="201111011557" tags="Tmux" server.page.revision="201111011557" server.host="file:///Users/dtownsend/Dropbox/tiddly/index.html" server.type="file">
 <pre>Automatic window renaming not working, even when “setw -g automatic-rename off” was in the conf file. The issue was it was conflicting with oh-my-zsh. If you delete the /oh-my-zsh/lib/termsupport.zsh file. It fixed my renaming issue.</pre>
 </div>
+<div title="Bash history and CTRL R shortcut" creator="YourName" modifier="YourName" created="201306232242" tags="Bash" changecount="1">
+<pre>Create ~/.inputrc and fill it with this:
+
+{{{
+&quot;\e[A&quot;: history-search-backward
+&quot;\e[B&quot;: history-search-forward
+set show-all-if-ambiguous on
+set completion-ignore-case on
+}}}
+
+This allows you to search through your history using the up and down arrows … i.e. type &quot;cd /&quot; and press the up arrow and you'll search through everything in your history that starts with &quot;cd /&quot;.</pre>
+</div>
 <div title="Catching Failed Processes in Erlang" modifier="YourName" created="201106120239" modified="201106131235" tags="Erlang Kata" server.page.revision="201106131235" server.host="file:///Users/dtownsend/Dropbox/tiddly/index.html" server.type="file">
 <pre>The key line is
 {{{
