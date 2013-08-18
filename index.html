@@ -701,10 +701,16 @@ while true; do tail -n0 -f request_log.open
 | cut -c-2; done 2&gt;/dev/null
 }}}</pre>
 </div>
-<div title="Creating a Fake Server" modifier="YourName" created="201111222127" tags="Linux" server.page.revision="201111222127" server.host="file:///Users/dtownsend/Dropbox/tiddly/index.html" server.type="file">
+<div title="Creating a Fake Server" modifier="YourName" created="201111222127" modified="201308182104" tags="Linux" server.page.revision="201111222127" server.host="file:///Users/dtownsend/Dropbox/tiddly/index.html" server.type="file" changecount="1">
 <pre>Netcat is your man
 {{{
 nc -kl  8002
+}}}
+
+For a one line web server
+{{{
+while true; do { echo -e 'HTTP/1.1 200 OK\r\n'; cat index.html; } | nc -l 8080; done
+
 }}}</pre>
 </div>
 <div title="Creating a named stash" modifier="Toons" created="201111091152" tags="Git" server.page.revision="201111091152" server.host="file:///Users/dtownsend/Dropbox/tiddly/index.html" server.type="file">
@@ -1071,6 +1077,20 @@ curl -v -H &quot;Content-Type: application/json&quot; -X POST -d '{&quot;usernam
 <div title="Making child folders in unix" modifier="Toons" created="201106121312" modified="201203200956" tags="Bash" server.page.revision="201106222047" server.host="file:///Users/dtownsend/Dropbox/tiddly/index.html" server.type="file" changecount="1">
 <pre>{{{
 mkdir -p /project/src
+}}}</pre>
+</div>
+<div title="More than Bang Bang" creator="YourName" modifier="YourName" created="201308182105" changecount="1">
+<pre>{{{
+$ !!                     # Repeat last command
+$ !x                     # Repeat last command that started with x
+$ !?x                    # Repeat last command that has the substring x
+$ !10                    # Repeat 10th command in the history file
+$ !-10                   # Repeat 10th from last command in the history file
+$ !!*                    # Fetch parameters from last command
+$ !!^                    # Fetch first parameter from last command
+$ !!$                    # Fetch last parameter from last command
+$ !!3                    # Fetch third parameter from last command
+$ !!:s/foo/bar/          # Repeat last command substituting foo for bar
 }}}</pre>
 </div>
 <div title="Move Empty Files To New Directory" modifier="Toons" created="201108221534" modified="201203200957" tags="Bash" server.page.revision="201108221534" server.host="file:///Users/dtownsend/Dropbox/tiddly/index.html" server.type="file" changecount="1">
