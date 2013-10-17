@@ -1027,6 +1027,12 @@ In case you were wondering, here are what all the options mean:
 brew install https://raw.github.com/mxcl/homebrew/6e3b53361f70e43dcd14e91d6da5043872b7b312/Library/Formula/riak.rb
 }}}</pre>
 </div>
+<div title="List all cron jobs for all users" creator="YourName" modifier="YourName" created="201310171322" tags="Unix" changecount="1">
+<pre>You would have to run this as root, but:
+{{{
+   for user in $(cut -f1 -d: /etc/passwd); do crontab -u $user -l; done
+}}}</pre>
+</div>
 <div title="Mac Screenshots" modifier="Toons" created="201108150927" tags="Mac" server.page.revision="201108150927" server.host="file:///Users/dtownsend/Dropbox/tiddly/index.html" server.type="file">
 <pre>Take a screenshot of the screen, and save it as a file on the desktop
 {{{
