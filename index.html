@@ -801,6 +801,33 @@ git push origin :newfeature
 find . -type f -not -exec cmp {} ..//poo2/{} &quot;;&quot; -print
 }}}</pre>
 </div>
+<div title="Emailing the results of an sql query" creator="YourName" modifier="YourName" created="201312272016" tags="MySql" changecount="1">
+<pre>{{{
+#!/bin/bash
+cd /home/user/results
+PATH=$PATH:/usr/bin:/usr/local/bin:/bin
+
+FILE1=results
+
+date &gt; $FILE1
+
+cat &lt;&lt; __EOSQL__  | mysql -u **USER** -p'**PASSWORD**' -h db-slave db_name &gt;&gt; $FILE1
+select count(*) as post_count
+from posts
+__EOSQL__
+
+cat &lt;&lt; __EOSQL__  | mysql -u **USER** -p'**PASSWORD**' -h db-slave db_name &gt;&gt; $FILE1
+select count(*) as user_count
+from users
+__EOSQL__
+
+
+RECIPIENTS=email1@email.com,email2@email.com
+
+mutt -s '[SQL Results] User Stats' -- $RECIPIENTS &lt; /home/user/results/$FILE1
+
+}}}</pre>
+</div>
 <div title="EmbeddingImages" modifier="Toons" created="201106111217" modified="201106222015" server.page.revision="201106222015" server.host="file:///Users/dtownsend/Dropbox/tiddly/index.html" server.type="file">
 <pre>An embedded image looks like this:
 
