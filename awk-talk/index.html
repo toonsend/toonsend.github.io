@@ -94,7 +94,7 @@ and
 <li>A comma seperating the fields includes a space</li>
 <pre>awk '{print $3,$4} money.txt</pre>
 <li>What does this do?</li>
-<pre>awk '{print $3,"$4"} money.txt</pre>
+<pre>awk '{print $3,"$4"}' money.txt</pre>
 <br/>
 <h2>TRY IT</h2>
 <li>Print out country,coin</li>
@@ -128,7 +128,7 @@ and
 <div class="slide">
 <h1>Relational Expressions</h1>
 <ul>
-<pre>awk '$4 == "USA" {print}' money.txt</pre>
+<pre>awk '$5 == "USA" {print}' money.txt</pre>
 <br/>
 <h2>TRY IT</h2>
 <li>Print all the coins where the value is less than 0.5</li>
@@ -139,7 +139,7 @@ and
 <div class="slide">
 <h1>Pattern Matchin</h1>
 <ul>
-<pre>awk '$4 ~ /USA/ {print}' money.txt</pre>
+<pre>awk '$5 ~ /USA/ {print}' money.txt</pre>
 
 <br/>
 <h2>TRY IT</h2>
@@ -169,8 +169,10 @@ and
 <div class="slide">
 <h1>Back to the beginning</h1>
 <ul>
-<pre>cat messages.txt | awk '$11=="504" { split($3,hr,":"); print $1,$2,hr[1]}'</pre>
-<pre> | uniq -c</pre>
+  <small>
+    <pre>cat messages.txt | awk '$11=="504" { split($3,hr,":"); print $1,$2,hr[1]}'</pre>
+    <pre> | uniq -c</pre>
+  </small>
 <li>What does it do?</li>
 <li>Example line can be found in </li>
 <a href='files/messages.txt'>messages.txt</a>
