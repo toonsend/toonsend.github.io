@@ -1,4 +1,4 @@
+cp ~/Downloads/tiddlywikilocations/index.html ./
 cp ~/Dropbox/tiddly/index.html ./
-cp ~/Dropbox/tiddly/index.xml ./
 git commit -am 'Updated Wiki'
 git push
