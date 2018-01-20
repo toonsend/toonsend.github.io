@@ -246,6 +246,8 @@ Error message and password prompt
 
 <li>List all cron jobs for all users</li>
 
+<li>Mac Command Line Shortcuts</li>
+
 <li>Mac Screenshots</li>
 
 <li>Macros in Vim</li>
@@ -317,6 +319,8 @@ Error message and password prompt
 <li>Spork and Testing</li>
 
 <li>Starting MongoDB</li>
+
+<li>Starting Postgres when DB not found error</li>
 
 <li>Strftime Cheatsheet</li>
 
@@ -8655,7 +8659,7 @@ Error message and password prompt
 <div created="20180113201006677" modified="20180113210558647" title="$:/state/tab/sidebar--1835078512">
 <pre>$:/core/ui/SideBar/Open</pre>
 </div>
-<div list="[[APIs with Amazon API Gateway]] [[RagTag Vim Plugin]] [[Vim - Confirm Search And Replace]] [[Haemoglobin Theme]] [[ZSH Prompt Variables]] [[Tracking dirty objects in Rails]] [[AWK Talk 2010]] [[Removing spaces from filenames - renaming files]] [[Count the number of lines per minute sent to Logfile.]] [[Who was last on the box]] [[New Machine Install Software]] [[Sniff a Port with ngrep]] [[Git Clean - Remove untracked files from the working tree]] [[Catching Failed Processes in Erlang]] [[Flushing Your Local DNS Cache]] [[Vim as a Word Processor]] [[Vim Grammar]] [[Find Files modified since]] [[Fixing Tmux Cut and Paste]] [[How to remove an entry from Chrome's Remembered URLs]] [[Setting Marks and Jumping]] [[Using openssl to extract private key ( .pem file) from .pfx (Personal Information Exchange)]]" title="$:/StoryList">
+<div list="[[Mac Command Line Shortcuts]] [[Starting Postgres when DB not found error]] [[APIs with Amazon API Gateway]] [[RagTag Vim Plugin]] [[Vim - Confirm Search And Replace]] [[Haemoglobin Theme]] [[ZSH Prompt Variables]] [[Tracking dirty objects in Rails]] [[AWK Talk 2010]] [[Removing spaces from filenames - renaming files]] [[Count the number of lines per minute sent to Logfile.]] [[Who was last on the box]] [[New Machine Install Software]] [[Sniff a Port with ngrep]] [[Git Clean - Remove untracked files from the working tree]] [[Catching Failed Processes in Erlang]] [[Flushing Your Local DNS Cache]] [[Vim as a Word Processor]] [[Vim Grammar]] [[Find Files modified since]] [[Fixing Tmux Cut and Paste]] [[How to remove an entry from Chrome's Remembered URLs]] [[Setting Marks and Jumping]] [[Using openssl to extract private key ( .pem file) from .pfx (Personal Information Exchange)]]" title="$:/StoryList">
 <pre></pre>
 </div>
 <div plugin-type="info" title="$:/temp/info-plugin" type="application/json">
@@ -8671,7 +8675,7 @@ Error message and password prompt
         },
         &quot;$:/info/url/full&quot;: {
             &quot;title&quot;: &quot;$:/info/url/full&quot;,
-            &quot;text&quot;: &quot;file:///Users/dtownsend/Downloads/tiddlywikilocations/index.html&quot;
+            &quot;text&quot;: &quot;file:///Users/dtownsend/projects/toonsend.github.io/index.html&quot;
         },
         &quot;$:/info/url/host&quot;: {
             &quot;title&quot;: &quot;$:/info/url/host&quot;,
@@ -8691,7 +8695,7 @@ Error message and password prompt
         },
         &quot;$:/info/url/pathname&quot;: {
             &quot;title&quot;: &quot;$:/info/url/pathname&quot;,
-            &quot;text&quot;: &quot;/Users/dtownsend/Downloads/tiddlywikilocations/index.html&quot;
+            &quot;text&quot;: &quot;/Users/dtownsend/projects/toonsend.github.io/index.html&quot;
         },
         &quot;$:/info/url/search&quot;: {
             &quot;title&quot;: &quot;$:/info/url/search&quot;,
@@ -8699,7 +8703,7 @@ Error message and password prompt
         },
         &quot;$:/info/url/origin&quot;: {
             &quot;title&quot;: &quot;$:/info/url/origin&quot;,
-            &quot;text&quot;: &quot;null&quot;
+            &quot;text&quot;: &quot;file://&quot;
         }
     }
 }</pre>
@@ -8880,8 +8884,7 @@ tmux -S /tmp/pair attach
 }}}</pre>
 </div>
 <div created="20180113215315990" modified="20180113215541257" tags="" title="APIs with Amazon API Gateway">
-<pre>
-* Generate an SDK: http://docs.aws.amazon.com/apigateway/latest/developerguide/how-to-generate-sdk.html
+<pre>* Generate an SDK: http://docs.aws.amazon.com/apigateway/latest/developerguide/how-to-generate-sdk.html
 * Export API: http://docs.aws.amazon.com/apigateway/latest/developerguide/api-gateway-export-api.html
 * Import API: http://docs.aws.amazon.com/apigateway/latest/developerguide/api-gateway-import-api.html
 
@@ -9426,6 +9429,30 @@ brew install https://raw.github.com/mxcl/homebrew/6e3b53361f70e43dcd14e91d6da504
 {{{
    for user in $(cut -f1 -d: /etc/passwd); do crontab -u $user -l; done
 }}}</pre>
+</div>
+<div created="20180120162808462" modified="20180120162916750" tags="bash mac commandline" title="Mac Command Line Shortcuts">
+<pre>* Ctrl + A	Go to the beginning of the line you are currently typing on. This also works for most text input fields system wide. Netbeans being one exception
+* Ctrl + E	Go to the end of the line you are currently typing on. This also works for most text input fields system wide. Netbeans being one exception
+* Ctrl + Q	Clears everything on current line
+* Ctrl + L	Clears the Screen
+* Cmd + K	Clears the Screen
+* Ctrl + U	Cut everything backwards to beginning of line
+* Ctrl + K	Cut everything forward to end of line
+* Ctrl + W	Cut one word backwards using white space as delimiter
+* Ctrl + Y	Paste whatever was cut by the last cut command
+* Ctrl + H	Same as backspace
+* Ctrl + C	Kill whatever you are running
+* Ctrl + D	Exit the current shell when no process is running, or send EOF to a the running process
+* Ctrl + Z	Puts whatever you are running into a suspended background process. fg restores it.
+* Ctrl + _	Undo the last command. (Underscore. So it's actually Ctrl + Shift + minus)
+* Ctrl + T	Swap the last two characters before the cursor
+* Ctrl + F	Move cursor one character forward
+* Ctrl + B	Move cursor one character backward
+* Option + →	Move cursor one word forward
+* Option + ←	Move cursor one word backward
+* Esc + T	Swap the last two words before the cursor
+* Tab	Auto-complete files and folder names
+* </pre>
 </div>
 <div created="20110815092700000" modifier="Toons" server.host="file:///Users/dtownsend/Dropbox/tiddly/index.html" server.page.revision="201108150927" server.type="file" tags="Mac" title="Mac Screenshots" type="text/x-tiddlywiki">
 <pre>Take a screenshot of the screen, and save it as a file on the desktop
@@ -10347,6 +10374,12 @@ sudo ngrep -d lo port 8000
 <pre>{{{
 mongod run --config /usr/local/Cellar/mongodb/1.8.2-x86_64/mongod.conf
 }}}</pre>
+</div>
+<div created="20180119100908159" modified="20180119100934538" tags="" title="Starting Postgres when DB not found error">
+<pre>```
+psql -d postgres
+```
+</pre>
 </div>
 <div created="20120124121800000" modifier="Toons" server.host="file:///Users/dtownsend/Dropbox/tiddly/index.html" server.page.revision="201201241218" server.type="file" tags="Time Ruby" title="Strftime Cheatsheet" type="text/x-tiddlywiki">
 <pre>Here’s the strftime options from the cheat page as a refresher:
