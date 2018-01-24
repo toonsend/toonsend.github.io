@@ -8659,7 +8659,7 @@ Error message and password prompt
 <div created="20180113201006677" modified="20180113210558647" title="$:/state/tab/sidebar--1835078512">
 <pre>$:/core/ui/SideBar/Open</pre>
 </div>
-<div list="[[Mac Command Line Shortcuts]] [[Starting Postgres when DB not found error]] [[APIs with Amazon API Gateway]] [[RagTag Vim Plugin]] [[Vim - Confirm Search And Replace]] [[Haemoglobin Theme]] [[ZSH Prompt Variables]] [[Tracking dirty objects in Rails]] [[AWK Talk 2010]] [[Removing spaces from filenames - renaming files]] [[Count the number of lines per minute sent to Logfile.]] [[Who was last on the box]] [[New Machine Install Software]] [[Sniff a Port with ngrep]] [[Git Clean - Remove untracked files from the working tree]] [[Catching Failed Processes in Erlang]] [[Flushing Your Local DNS Cache]] [[Vim as a Word Processor]] [[Vim Grammar]] [[Find Files modified since]] [[Fixing Tmux Cut and Paste]] [[How to remove an entry from Chrome's Remembered URLs]] [[Setting Marks and Jumping]] [[Using openssl to extract private key ( .pem file) from .pfx (Personal Information Exchange)]]" title="$:/StoryList">
+<div list="[[Creating a Fake Server]] [[Mac Command Line Shortcuts]] [[Starting Postgres when DB not found error]] [[APIs with Amazon API Gateway]] [[RagTag Vim Plugin]] [[Vim - Confirm Search And Replace]] [[Haemoglobin Theme]] [[ZSH Prompt Variables]] [[Tracking dirty objects in Rails]] [[AWK Talk 2010]] [[Removing spaces from filenames - renaming files]] [[Count the number of lines per minute sent to Logfile.]] [[Who was last on the box]] [[New Machine Install Software]] [[Sniff a Port with ngrep]] [[Git Clean - Remove untracked files from the working tree]] [[Catching Failed Processes in Erlang]] [[Flushing Your Local DNS Cache]] [[Vim as a Word Processor]] [[Vim Grammar]] [[Find Files modified since]] [[Fixing Tmux Cut and Paste]] [[How to remove an entry from Chrome's Remembered URLs]] [[Setting Marks and Jumping]] [[Using openssl to extract private key ( .pem file) from .pfx (Personal Information Exchange)]]" title="$:/StoryList">
 <pre></pre>
 </div>
 <div plugin-type="info" title="$:/temp/info-plugin" type="application/json">
@@ -8675,19 +8675,19 @@ Error message and password prompt
         },
         &quot;$:/info/url/full&quot;: {
             &quot;title&quot;: &quot;$:/info/url/full&quot;,
-            &quot;text&quot;: &quot;file:///Users/dtownsend/projects/toonsend.github.io/index.html&quot;
+            &quot;text&quot;: &quot;http://toonsend.github.io/&quot;
         },
         &quot;$:/info/url/host&quot;: {
             &quot;title&quot;: &quot;$:/info/url/host&quot;,
-            &quot;text&quot;: &quot;&quot;
+            &quot;text&quot;: &quot;toonsend.github.io&quot;
         },
         &quot;$:/info/url/hostname&quot;: {
             &quot;title&quot;: &quot;$:/info/url/hostname&quot;,
-            &quot;text&quot;: &quot;&quot;
+            &quot;text&quot;: &quot;toonsend.github.io&quot;
         },
         &quot;$:/info/url/protocol&quot;: {
             &quot;title&quot;: &quot;$:/info/url/protocol&quot;,
-            &quot;text&quot;: &quot;file:&quot;
+            &quot;text&quot;: &quot;http:&quot;
         },
         &quot;$:/info/url/port&quot;: {
             &quot;title&quot;: &quot;$:/info/url/port&quot;,
@@ -8695,7 +8695,7 @@ Error message and password prompt
         },
         &quot;$:/info/url/pathname&quot;: {
             &quot;title&quot;: &quot;$:/info/url/pathname&quot;,
-            &quot;text&quot;: &quot;/Users/dtownsend/projects/toonsend.github.io/index.html&quot;
+            &quot;text&quot;: &quot;/&quot;
         },
         &quot;$:/info/url/search&quot;: {
             &quot;title&quot;: &quot;$:/info/url/search&quot;,
@@ -8703,13 +8703,13 @@ Error message and password prompt
         },
         &quot;$:/info/url/origin&quot;: {
             &quot;title&quot;: &quot;$:/info/url/origin&quot;,
-            &quot;text&quot;: &quot;file://&quot;
+            &quot;text&quot;: &quot;http://toonsend.github.io&quot;
         }
     }
 }</pre>
 </div>
-<div created="20180113202146045" modified="20180113210509069" title="$:/temp/search">
-<pre></pre>
+<div created="20180113202146045" modified="20180124084557716" title="$:/temp/search">
+<pre>fake serv</pre>
 </div>
 <div created="20180113203103984" modified="20180113203124025" title="$:/theme">
 <pre>$:/themes/tiddlywiki/snowwhite</pre>
@@ -9060,17 +9060,17 @@ while true; do tail -n0 -f request_log.open
 
 </pre>
 </div>
-<div changecount="1" created="20111122212700000" modified="20180113201014537" modifier="YourName" server.host="file:///Users/dtownsend/Dropbox/tiddly/index.html" server.page.revision="201111222127" server.type="file" tags="Linux" title="Creating a Fake Server" type="text/vnd.tiddlywiki">
+<div changecount="1" created="20111122212700000" modified="20180124084622076" modifier="YourName" server.host="file:///Users/dtownsend/Dropbox/tiddly/index.html" server.page.revision="201111222127" server.type="file" tags="Linux" title="Creating a Fake Server" type="text/vnd.tiddlywiki">
 <pre>Netcat is your man
-{{{
+'''
 nc -kl  8002
-}}}
+'''
 
 For a one line web server
-{{{
+'''
 while true; do { echo -e 'HTTP/1.1 200 OK\r\n'; cat index.html; } | nc -l 8080; done
 
-}}}</pre>
+'''</pre>
 </div>
 <div created="20111109115200000" modifier="Toons" server.host="file:///Users/dtownsend/Dropbox/tiddly/index.html" server.page.revision="201111091152" server.type="file" tags="Git" title="Creating a named stash" type="text/x-tiddlywiki">
 <pre>{{{
